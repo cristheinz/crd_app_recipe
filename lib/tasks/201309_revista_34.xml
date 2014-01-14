@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+<source name="Revista Bimby, Momentos de Partilha N.º 34 - SETEMBRO 2.ª SÉRIE" pub_date="2013-09-01">
+ <categories>
+  <category name="Sopas quentes">
+   <recipes>
+    <recipe name="Sopa de feijão e espinafres" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="26">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Entradas">
+   <recipes>
+    <recipe name="Pão de alho" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="16">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Acompanhamentos">
+   <recipes>
+    <recipe name="Arroz de cenoura e espinafres" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="24">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Molho de tomate clássico" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="14">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Molho de tomate rápido" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="14">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Molho de tomate seco" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="14">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Vegetariano">
+   <recipes>
+    <recipe name="Bolonhesa de cogumelos" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="32">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Crepes de tofu e legumes" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="40">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Massa com tomate-cereja e pesto de coentros e avelã" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="40">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Ovos benedictos" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="11">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Piza de tomate e mozarela com pesto" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="18">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Salteado de camarão com legumes" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="20">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Vermicelli de arroz com vegetais" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="21">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Peixe e marisco">
+   <recipes>
+    <recipe name="Arroz de atum com espinafres e feijão" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="27">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Cotovelos com bacalhau e hortelã" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="31">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Filetes de salmonete com cremoso de aipo, legumes 'bio' salteados e arroz preto. 'Jus' leve de marisco" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="49">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Penne com atum" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="26">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Carnes e aves">
+   <recipes>
+    <recipe name="Arroz de açafrão com peru" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="22">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Arroz selvagem com lombinho de porco e ameixa" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="38">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Bifinhos de frango com licor beirão" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="28">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Hambúrgueres" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="24">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Mini-lasanha de carne e ricota" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="33">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Penne com carne picada" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="25">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Piza de alheira, espinafres e ovos de codorniz" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="17">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Salteado de frango com amêndoas" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="20">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Salteado de porco com sumo de laranja" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="19">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Tortilha de frango" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="30">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Lanche">
+   <recipes>
+    <recipe name="Bolo de ameixa" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="39">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Bolo de amendoim" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="37">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Bolo mimoso" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="37">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Madalenas com creme de avelã" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="44">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Pão de abóbora" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="41">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Petits fours com doce de alperce" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="34">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Piza de pera e frutos secos" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="45">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Queques de coco" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="43">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Sanduíche de pão de forma com pasta de fiambre" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="42">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Scones de queijo cheddar e azeitonas" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="36">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Bebidas">
+   <recipes>
+    <recipe name="Batido de ameixa" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="38">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Batido de chocolate" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="44">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Chá de gengibre e maçã" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="36">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Iogurte líquido de maçã, ananás e lima" calories="? Kcal" portions="? Doses" prep_time="? Min" difficult_level="FÁCIL" page="32">
+     <ingredients>
+      <ingredient portion="10 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+ </categories>
+</source>
+</sources>

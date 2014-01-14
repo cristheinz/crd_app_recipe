@@ -1,0 +1,31 @@
+<% if object.errors.any? %>
+  <div class="accordion" id="accordion2">
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <div class="alert alert-error">
+          <span><%= t(:error_msg) %></span>
+          <a class="accordion-toggle span pull-right" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"><%= t(:details) %></a>
+        </div>  
+      </div>
+      <div id="collapseOne" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <ul>
+          <% object.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+    <div class="alert alert-error">
+      The form contains <%= pluralize(object.errors.count, "error") %>.
+    </div>
+    <ul>
+    <% object.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>-->
+<% end %>

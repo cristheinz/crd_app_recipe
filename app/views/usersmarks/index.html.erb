@@ -1,0 +1,99 @@
+<% provide(:title, t(:shopping_list)) %>
+
+<h3 class="hidden-phone"><%= t(:shopping_list) %></h3>
+
+<div class="well">
+	<%= form_tag(setitem_path, remote: true, id: "refresh", class: "row") do |f| %>
+		<%= hidden_field_tag :r_id %>
+		<%= hidden_field_tag :r_price %>
+		<%= label_tag :r_total, "Total (#{current_shopping_list.size} itens)".html_safe, class: "span8 pull-left muted" %>
+		<%= text_field_tag :r_total, number_with_precision(@total, precision: 2), "style" => "text-align:right;", disabled: true, class: "span2 pull-right" %>
+		<%= submit_tag %>
+	<% end %>
+</div>
+
+<div class="accordion" id="accordion2">
+	<% current_shopping_list.each do |l| %>
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<table class=""><tr>
+				<td><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#<%= l[:id] %>">
+					<h4 id="i_<%= l[:id] %>" name="item" class="span6"><%=l[:name]%></h4>
+				</a></td>
+				<td><%= number_field_tag :price, l[:price].to_f, "style" => "text-align:right;", "tid" => l[:id], min: 0.00, class: "span6" %></td>
+			</tr></table>
+		</div>
+		<div id="<%= l[:id] %>" class="accordion-body collapse">
+			<div class="accordion-inner well">
+				<ul>
+				<% @ingredient_list.each do |x| %>
+					<% if x.ingredient.name == l[:name] %>
+					 <!--<li><%= "#{x.portion} #{x.ingredient.name} #{x.note} - #{link_to x.recipe.name, x.recipe}".html_safe %></li>-->
+            <li><%= "#{x.portion} #{x.ingredient.name} #{x.note} - <strong>#{x.recipe.name}</strong>".html_safe %></li>
+					<%end%>
+				<%end%>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<% end %>
+</div>
+
+<script>
+  jQuery(function($){
+  	$("input[type=submit]").hide();
+
+  	$('[name="item"]').each(function(){
+  		var id = $(this).attr("id").replace('i_','');
+  		var val = parseFloat($("input[tid="+id+"]").val(),2);
+  		if( val!=0 ) {
+  			$(this).addClass("muted");
+  		} else {
+  			$(this).removeClass("muted");
+  		}
+  	});
+
+  	$('[name="price"]').live('focus', function(){
+      $(this).attr('oldValue',$(this).val());
+	});
+
+  	$('[name="price"]').change(function(){
+  		//var x = $(this).val().replace(',','.');
+  		var id = $(this).attr('tid');
+  		var tot = parseFloat($('#r_total').val().replace(',','.'),2);
+  		var old = parseFloat($(this).attr('oldValue').replace(',','.'),2);
+  		var cur = parseFloat($(this).val().replace(',','.'),2);
+  		var intRegex = /^\d+$/;
+
+  		if (!intRegex.test($(this).val().replace(',','.').replace('.',''))) {
+  			$(this).val($(this).attr('oldValue'));
+  		} else {
+  			if(cur!=0) {
+  				$('#i_'+id).addClass("muted");
+  			} else {
+				$('#i_'+id).removeClass("muted");
+  			}
+  			var sum = tot-old+cur;
+  			$('#r_total').val(sum.toFixed(2).replace('.',','));
+  			//$(this).val(cur.toFixed(2).replace('.',','));
+  			//x=parseFloat(x,2).toFixed(2);
+
+  			$('#r_id').val($(this).attr("tid"));
+  			$('#r_price').val(cur);
+  			$("#refresh").submit();
+  		}
+  	});
+
+  	$('[name="price"]').click(function(){
+  		$(this).select();
+  	});
+
+  	$('[name="price"]').blur(function(){
+  		/*var val=$(this).val().replace('.',',');
+  		alert(val);
+  		$(this).val(val).trigger("change");*/
+  	});
+
+  });
+</script>
+

@@ -1,0 +1,50 @@
+<li class="span9">
+    <div class="thumbnail">
+        <table class="" border="0">
+        <tr>
+            <td rowspan="4" valign="top" class="span2 hidden-phone">
+                <%= link_to image_tag(recipe.source.image.to_s, "data-src"=> "holder.js/150x100", size: "150x100 ", alt: recipe.source.name, class: "hidden-phone"), recipe.source if recipe.source.public? %>
+            </td>
+            <td colspan="2" class="span7">
+                <%= link_to "<h5>#{recipe.name}</h5>".html_safe, recipe, class: "" %>
+            </td>
+            <td class="span3">
+                <div class="pull-right">
+                <% if signed_in? %>
+                    <% mark_type = "0" %>
+                    <% mark=current_user.usersmarks.find_by_recipe_id(recipe.id) %>
+                    <% mark_type=mark.mark_type if mark %>
+                    <%= button_tag "<i class='icon-star'></i>".html_safe, class: "btn btn-small", id: "#{recipe.id}", name: "fav", "status" => mark_type %>
+                    <%= button_tag "<i class='icon-shopping-cart'></i>".html_safe, class: "btn btn-small", id: "#{recipe.id}", name: "car", "status" => mark_type %>
+                <% end %>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="span5">
+                <small><%= recipe.pax if recipe.pax %></small>
+                <i class="icon-bell"></i>
+                <strong><%= recipe.prep_time if recipe.prep_time %></strong>
+                <%= "<small>#{recipe.difficult_level}</small>".html_safe if recipe.difficult_level %>                
+            </td>
+
+            <td colspan="2" class="span5">
+                <%= link_to recipe.category.name, recipe.category, class: "" %>
+            </td>
+            
+        </tr>
+        <tr class="">
+            <td colspan="3" class="span10">
+                <p class="muted visible-desktop"><small><%= recipe.highlight([""]) %></small></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="span10">
+                <small class=""><%=link_to recipe.source.name, recipe.source%></small>
+                <small><%= "#{t(:page)} #{recipe.page}" if recipe.page %></small>
+            </td>
+        </tr>
+        </table>
+    </div>
+</li>

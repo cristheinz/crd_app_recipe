@@ -1,0 +1,90 @@
+<%= form_for(current_user.usersmarks.build(), remote: true, :html => { :id => "flags" }) do |f| %>
+  <%= f.hidden_field :recipe_id, value: 0 %>
+  <%= f.hidden_field :mark_type, value: 0 %>
+  <%= f.submit %>
+<% end %>
+
+<script>
+  jQuery(function($){
+    var path = window.location.pathname;
+    $("#flags input[type=submit]").hide();
+
+    $('button[type=submit]').each(function(){
+        if( $(this).attr("status") == "0") {
+          if( $(this).attr("name") == "fav" ) {
+            $(this).removeClass("btn-warning");
+          } else { $(this).removeClass("btn-danger"); }
+        } else {
+        if( $(this).attr("status") == "1") {
+          if( $(this).attr("name") == "fav" ) {
+            $(this).addClass("btn-warning");
+          } else { $(this).removeClass("btn-danger"); }
+        } else {
+        if( $(this).attr("status") == "2") {
+          if( $(this).attr("name") == "fav" ) {
+            $(this).removeClass("btn-warning");
+          } else { $(this).addClass("btn-danger"); }
+        } else {
+        if( $(this).attr("status") == "3") {
+          if( $(this).attr("name") == "fav" ) {
+            $(this).addClass("btn-warning");
+          } else { $(this).addClass("btn-danger"); }
+        }}}}
+    });
+
+    $('button[type=submit]').click(function(){
+        var id = $(this).attr("id");
+        $("#usersmark_recipe_id").val(id);
+        
+        
+        if( $(this).attr("name") == "fav" ) {
+          if( $(this).attr("status") == "0") {
+            $("#usersmark_mark_type").val("1");
+            $(this).addClass("btn-warning");
+            $('button[id='+id+']').attr("status","1");
+          } else {
+          if( $(this).attr("status") == "1") {
+            $("#usersmark_mark_type").val("0");
+            $(this).removeClass("btn-warning");
+            $('button[id='+id+']').attr("status","0");
+            if (path == "/recipes") { $(this).closest( "li" ).hide(); }
+          } else {
+          if( $(this).attr("status") == "2") {
+            $("#usersmark_mark_type").val("3");
+            $(this).addClass("btn-warning");
+            $('button[id='+id+']').attr("status","3");
+          } else {
+          if( $(this).attr("status") == "3") {
+            $("#usersmark_mark_type").val("2");
+            $(this).removeClass("btn-warning");
+            $('button[id='+id+']').attr("status","2");
+          }}}}
+        } else {
+        if( $(this).attr("name") == "car" ) {
+          if( $(this).attr("status") == "0") {
+            $("#usersmark_mark_type").val("2");
+            $(this).addClass("btn-danger");
+            $('button[id='+id+']').attr("status","2");
+          } else {
+          if( $(this).attr("status") == "1") {
+            $("#usersmark_mark_type").val("3");
+            $(this).addClass("btn-danger");
+            $('button[id='+id+']').attr("status","3");
+          } else {
+          if( $(this).attr("status") == "2") {
+            $("#usersmark_mark_type").val("0");
+            $(this).removeClass("btn-danger");
+            $('button[id='+id+']').attr("status","0");
+            if (path == "/recipes") { $(this).closest( "li" ).hide(); }
+          } else {
+          if( $(this).attr("status") == "3") {
+            $("#usersmark_mark_type").val("1");
+            $(this).removeClass("btn-danger");
+            $('button[id='+id+']').attr("status","1");
+          }}}}
+        }}
+
+        $("#flags").submit();
+    });
+  });
+</script>

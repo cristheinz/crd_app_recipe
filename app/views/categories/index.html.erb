@@ -1,0 +1,19 @@
+<!--<h1>Listing categories</h1>-->
+<h1><%=t :categories %></h1>
+
+<p><%= link_to t(:new_category), new_category_path, class: "btn btn-primary" %></p>
+
+<table class="table table-striped">
+  <tr>
+    <th><%= t :title %></th>
+    <th><%= t :options %></th>
+  </tr>
+
+<% @categories.each do |category| %>
+  <tr>
+    <td><%= link_to category.name, category %></td>
+    <td><%= link_to t(:edit), edit_category_path(category) %> |
+    <%= link_to t(:destroy), category, method: :delete, data: { confirm: t(:are_you_sure?) } %></td>
+  </tr>
+<% end %>
+</table>

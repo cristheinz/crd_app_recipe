@@ -1,0 +1,40 @@
+<%= form_for(@feedback) do |f| %>
+ <%= render 'shared/error_messages', object: f.object %>
+ <div class="field">
+ 	<%= f.label :name %>
+  	<%= f.text_field :name %>
+  	<%= f.label :email %>
+  	<%= f.text_field :email %>
+  	<%= f.hidden_field :message, value:"." %>
+  	<%= check_box_tag 'accept' %> Concordo com os Termos e Condições
+	<%= f.submit t(:send), class: "btn btn-large btn-primary", disabled: true %>
+  </div>
+  
+
+<% end %>
+
+<script>
+  $("input[type=checkbox]").click(function(){
+      if($(this).is(':checked')) {
+      	//alert("accepted!");
+      	$('input[type="submit"]').removeAttr('disabled');
+  	  } else {
+  	  	$('input[type="submit"]').attr('disabled','disabled');
+  	  }
+    });
+</script>
+
+<div class="well">
+<p><strong><u>Termos e Condições das Parcerias</u></strong></p>
+<ol>
+<li>O Bimbyfy só aceita parceiros com conteúdos originais. Caso seja detectada alguma cópia a parceria é desfeita e os conteúdos elimidados.</li>
+<li>Os parceiros são responsáveis pelas suas receitas, tanto à nivel da prepação quanto à nivel de conteúdos. O Bimbyfy não se responsabiliza pelas receitas dos parceiros.</li>
+<li>Cada parceiro terá disponivel um livro de receitas no Bimbyfy com até 25 receitas. <!--Se pretenderem inserir mais que 25 receitas deverão optar pelos planos pagos.--></li>
+<!--
+<li>Os parceiros deverão enviar suas receitas num ficheiro de texto simples com as seguintes informações para cada receita:
+<ul><li>Categoria</li><li>Nome</li><li>Rendimento</li><li>Lista de ingredientes</li><li>Modo de preparação</li><li>Dicas *</li><li>Calorias *</li><li>Página *</li></ul>
+<small>* informação opcional.</small></li>
+<li>O Bimbyfy validará o ficheiro com as receitas do parceiro e irá inserir seus conteúdos na base de dados. Caso existam anomalias no ficheiro o parceiro será contactado.</li>
+<li>Juntamente com o ficheiro o parceiro deverá informar o título do seu livro de receitas. Caso se trate de um blogue o título deverá corresponder à URL.</li>-->
+<li>Os parceiros receberão um email de boas-vindas que irá conter indicações sobre o procedimento do envio das receitas.</li>
+</div>

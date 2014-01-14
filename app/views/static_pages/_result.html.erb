@@ -1,0 +1,146 @@
+<li class="span12">
+<% if !signed_in? %>
+    <%= select_tag :source_opt, options_for_select([[t(:source), 0], [t(:partners), 2]], params[:source_opt]), name: "s2", class: "span4" %>
+<% else %>
+    <%= select_tag :source_opt, options_for_select([[t(:source), 0], ["Meus #{t(:source)}", 1], [t(:partners), 2]], params[:source_opt]), name: "s2", class: "span4" %>
+<% end %>
+<%= select_tag :category_opt, options_from_collection_for_select(@cats, :id, :name, params[:category_opt]), prompt: t(:category), class: "span4" %>
+<%= select_tag :order_opt, options_for_select([["Correnspondência de ingredientes", 0], ["Percentagem da receita", 1], ["Dificuldade", 2], ["Tempo de preparação", 3]], params[:order_opt]), class: "span4" %>
+</li>
+
+<% @result.each do |r| %>
+<li class="span12">
+	<div class="thumbnail">
+    <table class="" border="0">
+      <tr>
+        <td colspan="4">
+          <div class="center"><%= get_badge(r[:ratio2]) %></div>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="4" valign="top" class="span2 hidden-phone">
+          <%= link_to image_tag(r[:recipe].source.image.to_s, "data-src"=> "holder.js/150x100", size: "150x100 ", alt: r[:recipe].source.name, class: "hidden-phone"), r[:recipe].source if r[:recipe].source.public? %>
+        </td>
+        <td colspan="2" class="span7">
+          <%= link_to "<h5>#{r[:recipe].name}</h5>".html_safe, r[:recipe], class: "" %>
+        </td>
+        <td class="span3">
+          <div class="pull-right">
+            <% if signed_in? %>
+              <% mark_type = "0" %>
+              <% mark=current_user.usersmarks.find_by_recipe_id(r[:recipe].id) %>
+              <% mark_type=mark.mark_type if mark %>
+              <%= button_tag "<i class='icon-star'></i>".html_safe, class: "btn btn-small", id: "#{r[:recipe].id}", name: "fav", "status" => mark_type %>
+              <%= button_tag "<i class='icon-shopping-cart'></i>".html_safe, class: "btn btn-small", id: "#{r[:recipe].id}", name: "car", "status" => mark_type %>
+            <% end %>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="span5">
+          <small><%= r[:recipe].pax if r[:recipe].pax %></small>
+          <i class="icon-bell"></i>
+          <strong><%= r[:recipe].prep_time if r[:recipe].prep_time %></strong>
+          <%= "<small>#{r[:recipe].difficult_level}</small>".html_safe if r[:recipe].difficult_level %>                
+        </td>
+
+        <td colspan="2" class="span5">
+          <%= link_to r[:recipe].category.name, r[:recipe].category, class: "" %>
+        </td>
+      </tr>
+
+      <tr class="">
+        <td colspan="3" class="span10">
+          <p class="muted"><small><%= r[:txt] %></small></p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="3" class="span10">
+          <small class=""><%=link_to r[:recipe].source.name, r[:recipe].source%></small>
+          <small><%= "#{t(:page)} #{r[:recipe].page}" if r[:recipe].page %></small>
+        </td>
+      </tr>
+    </table>
+
+<!--
+		<div class="row-fluid">
+            <div class="span1 center hidden-phone">
+                <%= get_badge(r[:ratio2]) %><br/>
+                <small><%= r[:recipe].pax if r[:recipe].pax %></small><br/>
+                <i class="icon-bell"></i>
+                <h5><%= r[:recipe].prep_time if r[:recipe].prep_time %></h5>
+                <%= "<small>#{r[:recipe].difficult_level}</small>".html_safe if r[:recipe].difficult_level %>
+            </div>
+            <div class="span1 visible-phone">
+                <%= get_badge(r[:ratio2]) %>
+                <small><%= r[:recipe].pax if r[:recipe].pax %></small>
+                <i class="icon-bell"></i>
+                <strong><%= r[:recipe].prep_time if r[:recipe].prep_time %></strong>
+                <%= "<small>#{r[:recipe].difficult_level}</small>".html_safe if r[:recipe].difficult_level %>
+            </div>
+            <div class="span9">
+                <div class="row-fluid">
+                <%= link_to "<h5>#{r[:recipe].name}</h5>".html_safe, r[:recipe], class: "span7" %>
+                <%= link_to r[:recipe].category.name, r[:recipe].category, class: "span5 pull-right" %>
+                </div>
+                <p class="muted"><small><%= r[:txt] %></small></p>
+                <small class=""><%=r[:recipe].source.name%></small>
+                <small><%= "#{t(:page)} #{r[:recipe].page}" if r[:recipe].page %></small>
+
+            </div>
+            <div class="span2">
+
+          <% if signed_in? %>
+            <% mark_type = "0" %>
+            <% mark=current_user.usersmarks.find_by_recipe_id(r[:recipe].id) %>
+            <% mark_type=mark.mark_type if mark %>
+            <%= button_tag "<i class='icon-star'></i>".html_safe, class: "btn btn-small", id: "#{r[:recipe].id}", name: "fav", "status" => mark_type %>
+            <%= button_tag "<i class='icon-shopping-cart'></i>".html_safe, class: "btn btn-small", id: "#{r[:recipe].id}", name: "car", "status" => mark_type %>
+          <% end %>
+              
+                <%= link_to image_tag(r[:recipe].source.image.to_s, "data-src"=> "holder.js/150x100", size: "150x100 ", alt: r[:recipe].source.name, class: "hidden-phone"), r[:recipe].source if r[:recipe].source.public? %>
+            </div>
+		</div>
+-->
+
+	</div>
+</li>
+<% end %>
+<div class="center">
+    <%= will_paginate @result %>
+</div>
+<%= render 'usersmarks/form' if signed_in? %>
+
+<script>
+  jQuery(function($){
+    var url = $(location).attr('href').replace(/&page=[^&;]*/,'');
+
+    $('[name="s1"]').change(function(){
+      url = url.replace(/&source_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({source_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+    $('[name="s2"]').change(function(){
+      url = url.replace(/&source_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({source_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+
+    $("#category_opt").change(function(){
+      url = url.replace(/&category_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({category_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+    $("#order_opt").change(function(){
+      url = url.replace(/&order_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({order_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+  });
+</script>

@@ -1,0 +1,27 @@
+<footer class="row-fluid">
+    <ul class="nav nav-pills pull-right">
+      <li><%= link_to t(:about), about_path unless URI(request.url).path.to_s.include?("about") %></li>
+      <!--<li><%= link_to t(:partnership), partnership_path unless URI(request.url).path.to_s.include?("partnership") %></li>-->
+      <li><%= link_to t(:home), assignout_path, method: "delete" if !home_page? %></li>
+    </ul>
+
+	<div class="span3">
+	<!--<div class="navbar-fixed-bottom center"></div>-->
+  		<p>developed by <b><a href="http://cristheinz.info" target="_blank">cristheinz</a></b></p>
+
+ 	</div>
+
+</footer>
+<!--<div id="fim">Deus seja louvado</div>
+<div class="crd-footer hidden-desktop row-fluid">
+    <ul class="nav nav-pills pull-right">
+      <li><%= link_to t(:about), about_path unless URI(request.url).path.to_s.include?("about") %></li>
+      <li><%= link_to t(:partnership), partnership_path unless URI(request.url).path.to_s.include?("partnership") %></li>
+      <li><%= link_to t(:home), assignout_path, method: "delete" if !home_page? %></li>
+    </ul>
+
+	<div class="span3">
+  		<p>developed by <b>cristheinz</b></p>
+ 	</div>
+
+</div>-->

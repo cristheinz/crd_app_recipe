@@ -1,0 +1,107 @@
+<% provide(:title, @source.name) %>
+<div class="row">
+<div class="span9">
+  
+  <div class="row-fluid">
+    <div class="span3">
+      <%= image_tag(@source.image.to_s , class: "thumbnail") if !@source.image.to_s.empty? %>
+    </div>
+    
+    <div class="span8">
+      <% if @source.public? %>
+        <h1>
+          <%= @source.name unless current_user?(@source.user) %>
+          <%= t :my_cookbook if current_user?(@source.user) %>
+        </h1>
+        <h2><%= "#{t(:published_on)} #{l @source.publish_date, format: "%B %Y"}".html_safe %></h2>
+      <% else %>
+        <h4><%= t :the_best_of %></h4>
+        <h2><%= link_to @source.name, "http://#{@source.name}", target: "_blank" %></h2>
+      <% end %>
+        
+      
+      <p class="center"><%= "#{@recipes.size} #{t(:recipes)}" %></p>
+    </div>
+
+    
+  </div>
+
+  <% if @recipes.size>0 %>
+  <h5><%= t :categories %>:</h5>
+  <div class="accordion" id="accordion2">
+    <% @cats.each do |c| %>
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#<%= c.id %>"><%= c.name %></a>
+      </div>
+      <div id="<%= c.id %>" class="accordion-body collapse">
+        <div class="accordion-inner well">
+          <ul class="nav nav-tabs nav-stacked">
+          <% @source.recipes.where("category_id = ?",c.id).order("name").each do |r| %>
+            <li>
+              <%= link_to "<strong class='span6'>#{r.name}</strong><small class=''> #{t(:page)} #{r.page}</small>".html_safe, r if @source.public? %>
+              <%= link_to "<strong>#{r.name}</strong>".html_safe, r unless @source.public? %>
+            </li>  
+          <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <% end %>
+</div>
+
+<div class="offset9" data-spy="affix">
+  <%= link_to t(:new_recipe), new_recipe_path(source_id: @source.id), class: "btn btn-primary" if current_user?(@source.user) %>
+  <%= link_to t(:edit), edit_source_path(@source), class: "btn btn-primary" if current_user?(@source.user) %>
+  <%= render 'shared/advertise_column' unless current_user?(@source.user) %>
+</div>
+</div>
+
+<!--APAGAR!-->
+<% if Rails.env.test? %>
+<% if @recipes.size>0 %>
+<table class="table table-striped">
+  <tr>
+    <th><%= t(:recipe) %></th>
+    <th>
+      <% if @selcat %>
+        <span  class="pull-left">
+          <%= @selcat.name %><%= link_to "&times;".html_safe, @source, class: "close" %>
+        </span>
+      <% else %>
+        <ul class="nav "><li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <%= t(:category) %>
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+          <% @cats.each do |c| %>
+            <li><%= link_to c.name, source_path(@source, category_id: c.id) %></li>
+          <% end %>
+          </ul>
+        </li></ul>
+      <% end %>
+    </th>
+    <th><%= t(:page) %></th>
+    <!--<%= "<th> #{t :options} </th>".html_safe if current_user?(@source.user) %>-->
+  </tr>
+
+  <% @recipes.each do |r| %>
+  <tr>
+    <td><%= link_to r.name, r %></td>
+    <td><%= link_to r.category.name, r.category %></td>
+    <td><%= r.page %></td>
+    <!--<% if current_user?(@source.user) %>
+    <td>
+      <%= link_to t(:ingredients), portions_path(recipe_id: r.id) %> | 
+      <%= link_to t(:edit), edit_recipe_path(r) %> |
+      <%= link_to t(:destroy), r, method: :delete, data: { confirm: t(:are_you_sure?) } %>
+    </td>
+    <% end %>-->
+  </tr>
+  <% end %>
+</table>
+<% end %>
+<% end %>

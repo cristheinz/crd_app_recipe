@@ -1,0 +1,149 @@
+
+<% if @result.size>0 %>
+  <div class="visible-phone">
+    <% if !signed_in? %>
+      <%= select_tag :source_opt, options_for_select([[t(:source), 0], [t(:partners), 2]], params[:source_opt]), name: "s2" %>
+    <% else %>
+      <%= select_tag :source_opt, options_for_select([[t(:source), 0], ["Meus #{t(:source)}", 1], [t(:partners), 2]], params[:source_opt]), name: "s2" %>
+    <% end %>
+  </div>
+  <table class="table table-striped">
+  <tr>
+    <th style="width: 100px" class="hidden-phone">
+      <% if !signed_in? %>
+        <%= select_tag :source_opt, options_for_select([[t(:source), 0], [t(:partners), 2]], params[:source_opt]), name: "s1" %>
+      <% else %>
+        <%= select_tag :source_opt, options_for_select([[t(:source), 0], ["Meus #{t(:source)}", 1], [t(:partners), 2]], params[:source_opt]), name: "s1" %>
+      <% end %>
+    </th>
+    <th>
+      <%= t(:recipe) %>
+      <!--
+      <ul class="nav "><li class="dropdown">
+      <% if @list_all %>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t(:all_recipes) %><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><%= link_to t(:bimby_recipes), root_path(category_id: @selcat) %></li>
+        </ul>
+      <% else %>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t(:bimby_recipes) %><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><%= link_to t(:all_recipes), root_path(all_recipes: "1", category_id: @selcat) %></li>
+        </ul>
+      <% end %>
+      </li></ul>
+      -->
+    </th>
+    <th style="width: 100px">
+      <!--<%= select_tag :category_opt, options_from_collection_for_select(@cats, :id, :name, params[:category_opt]), {include_blank: t(:category)} %>-->
+      <%= select_tag :category_opt, options_from_collection_for_select(@cats, :id, :name, params[:category_opt]), prompt: t(:category) %>
+      <!--
+      <% if @selcat %>
+        <span class="pull-left">
+          <%= @selcat.name.html_safe %><%= link_to "&times;".html_safe, root_path(all_recipes: @list_all), class: "close" %>
+        </span>
+      <% else %>
+        <ul class="nav "><li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <%= t(:category) %>
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+          <% @cats.each do |c| %>
+            <li><%= link_to c.name, root_path(all_recipes: @list_all, category_id: c.id) %></li>
+          <% end %>
+          </ul>
+        </li></ul>
+      <% end %>
+    -->
+    </th>
+    
+    <th>
+      <div class="visible-phone">%</div>
+      <div class="hidden-phone"><%= t(:classification) %></div>
+    </th>
+    
+  </tr>
+
+  <% @result.each do |r| %>
+ 	<tr>
+    <td class="hidden-phone">
+      <%= link_to image_tag(r[:recipe].source.image.to_s, "data-src"=> "holder.js/150x100", size: "150x100", alt: r[:recipe].source.name), r[:recipe].source, class: "thumbnail" unless r[:recipe].source.image.to_s.empty? %>
+      <small>
+        <%= "#{t(:page)} #{r[:recipe].page}" if r[:recipe].page %>
+        <%= r[:recipe].source.name unless r[:recipe].source.public? %>
+      </small>
+    </td>
+
+    <td><%= link_to r[:recipe].name, r[:recipe] %><br/>
+      <p class="muted">
+        <small><%= r[:txt] %></small>
+      </p>
+    </td>
+    
+    <td><%= link_to r[:recipe].category.name, r[:recipe].category %></td>
+    
+    <td><%= get_badge(r[:ratio2]) %></td>
+  </tr>
+  <% end %>
+  </table>
+  
+  <div class="center">
+    <%= will_paginate @result %>
+  </div>
+<% else %>
+  <div class="alert">
+    Nenhuma receita encontrada.
+    <!--<% if @list_all %>
+      Introduza mais ingredientes para, pelo menos, perfazer 20% da receita.
+    <% else %>
+      <%= t :no_result_msg %> <%= link_to t(:all_recipes), root_path(all_recipes: "1", category_id: @selcat) %>
+    <% end %>-->
+  </div>
+<% end %>
+
+<script>
+  jQuery(function($){
+    //var form = $("form");
+    var url = $(location).attr('href').replace(/&page=[^&;]*/,'');
+
+    $('[name="s1"]').change(function(){
+      //var url = loc.replace(/(&source_opt=)+[0-9]\d*/,'');
+      url = url.replace(/&source_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({source_opt: $(this).val()});
+      //url = url.replace(/(source_opt=)+[0-9]\d*$/,'$1' + 'source_opt='+$(this).val() + '$2');
+      //alert(url);
+      //var loc = $(location).attr('href').replace(/^&source_opt=+[0-9]\d*$/, ""); 
+      //var loc = $(location).attr('href').replace("&source_opt=", "");
+      //var url = loc+"&"+jQuery.param({source_opt: $(this).val()});
+      //var i = url.indexOf('&source_opt=')+1;
+      //var f = url.lastIndexOf('&source_opt=')+1;
+      //var xurl=url.substr(0, i)+url.substr(i+12, url.length);
+      //window.location.href = url;
+      //alert("bbb");
+      //$(this).closest("form").submit();
+      //form.submit();
+      //alert(url);
+      window.location.href = url;
+    });
+
+    $('[name="s2"]').change(function(){
+      url = url.replace(/&source_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({source_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+
+    $("#category_opt").change(function(){
+      //var url = loc.replace(/(&category_opt=)+[0-9]\d*/,'');
+      //url = loc.replace('&category_opt=','');
+      //url = url+"&"+jQuery.param({category_opt: $(this).val()});
+      //window.location.href = url;
+      url = url.replace(/&category_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({category_opt: $(this).val()});
+      window.location.href = url;
+      //form.submit();
+    });
+
+  });
+</script>

@@ -1,0 +1,173 @@
+<% provide(:title, @recipe.name) %>
+<div class="row">
+    <div class="span9">
+      <div class="span8 row-fluid">
+        <table><tr>
+          <td class="span4">
+          <%= image_tag(@link, alt: @recipe.name, :size => "320x320", class: "thumbnail") if@link.length>0 %>
+          <small>imagem fornecida por <%=image_tag('https://www.google.com/uds/css/small-logo.png')%></small>
+          </td>
+          <td class="center span4 offset4">
+            <small><%= @recipe.pax if @recipe.pax %></small><br/>
+            <i class="icon-bell"></i>
+            <h3><%= @recipe.prep_time if @recipe.prep_time %></h3>
+            <%= "<small>DIFICULDADE:<br/> #{@recipe.difficult_level}</small>".html_safe if @recipe.difficult_level %>
+          </td>
+        </tr></table>
+
+        <div class="span8">
+          <h3><%= @recipe.name %></h3>
+          <% if @recipe.source.public? %>
+          <p><i><%= link_to @recipe.source.name, @recipe.source  %></i>&nbsp;|&nbsp;
+          <i><%= link_to @recipe.category.name, @recipe.category  %></i>&nbsp;|&nbsp;
+          <i><%= "#{t(:page)} #{@recipe.page}" %></i></p>
+          <% end %>
+          <%= "<p>#{t :shared_by} <i> #{link_to @recipe.source.name, @recipe.source}</i></p>".html_safe if !@recipe.source.public? %>
+        </div>
+        
+        <div class="span3 row-fluid">
+          <% if signed_in? %>
+          <a href="#" id="fav" class="span6 btn" data-toggle="tooltip" title="Marcar como favorita"><i class="icon-star"></i></a>
+          <a href="#" id="car" class="span6 btn" data-toggle="tooltip" title="Enviar para Lista de Compras"><i class="icon-shopping-cart"></i></a>
+          <% end %>
+        </div>
+
+        <br/>
+      </div>
+      
+      <div class="span8 well">
+        <% @recipe.list.each do |key,value| %>
+          <p><b><%= if (key.nil? || key.empty?) then t(:ingredients) else key end %>:</b>
+          <% value.each do |v| %>
+            <li><%= v %></li>
+          <% end %>
+          </p>
+        <% end %>
+
+        <p><b><%= t(:preparation) %>:</b></p>
+        <% if !@recipe.source.public? || (current_user && current_user.admin?) %>
+          <p><%= @desc %></p>
+
+          <% if !@recipe.note.nil? && !@recipe.note.empty? %>
+            <p><b><%= t(:note) %>:</b></br><%= sanitize simple_format(@recipe.note), :tags => %w(b br) %></p>
+          <% end %>
+
+          <% if @recipe.calories && @recipe.calories>0 %>
+            <p><b><%= t(:calories) %>:</b><%= @recipe.calories %></p>
+          <% end %>
+        <% else %>
+          <% if signed_in? %>
+            <%= form_for(current_user.usersmarks.build(recipe_id: @recipe.id), remote: true, :html => { :id => "flags" }) do |f| %>
+              <%= f.hidden_field :recipe_id %>
+              <%= f.hidden_field :mark_type, value: @mark_type %>
+              <%= f.text_area :note, value: @usernote, placeholder: "#{t(:usernote)}...", rows: 15, class: "span7" %>
+              <!--<br/><small><%= t(:click_to_edit) %></small>-->
+              <%= f.submit %>
+            <% end %>
+
+            
+          <% else %>
+            <div class="alert warning"><%= "#{t(:copyright_lock)} #{link_to t(:sign_in), signin_path}".html_safe %></div>
+          <% end %>
+        <% end %>
+      </div>
+      <!--<%= render 'layouts/fb_comments' %>-->
+    </div>
+    <div class="offset9" data-spy="affix">
+        <% if current_user && recipe_correct_user(@recipe) %>
+          <ul class="nav nav-list">
+            <li class="nav-header">Opções</li>
+            <li><%=link_to t(:new_recipe), new_recipe_path(source_id: @recipe.source) %></li>
+            <li class="divider"></li>
+            <li><%=link_to "#{t(:edit)} #{t(:ingredients)}", portions_path(recipe_id: @recipe.id)%></li>
+            <li><%=link_to "#{t(:edit)} #{t(:recipe)}", edit_recipe_path(@recipe) %></li>
+            <li class="divider"></li>
+            <li><%= link_to "#{t(:destroy)} #{t(:recipe)}", @recipe, method: :delete, data: { confirm: t(:are_you_sure?) } %></li>
+          </ul>
+        <%else%>
+          <%= render 'shared/advertise_column' %>
+        <%end%>
+    </div>
+</div>
+
+<script>
+  jQuery(function($){
+    $("input[type=submit]").hide();
+    if( $("#usersmark_mark_type").val() == "0") {
+        $("#fav").removeClass("btn-warning");
+        $("#car").removeClass("btn-danger");
+      } else {
+      if( $("#usersmark_mark_type").val() == "1") {
+        $("#fav").addClass("btn-warning");
+        $("#car").removeClass("btn-danger");
+      } else {
+      if( $("#usersmark_mark_type").val() == "2") {
+        $("#fav").removeClass("btn-warning");
+        $("#car").addClass("btn-danger");
+      } else {
+      if( $("#usersmark_mark_type").val() == "3") {
+        $("#fav").addClass("btn-warning");
+        $("#car").addClass("btn-danger");
+      }}}}
+
+    $("#fav").click(function(){
+      if( $("#usersmark_mark_type").val() == "0") {
+        $("#usersmark_mark_type").val("1");
+        $(this).addClass("btn-warning");
+      } else {
+      if( $("#usersmark_mark_type").val() == "1") {
+        $("#usersmark_mark_type").val("0");
+        $(this).removeClass("btn-warning");
+      } else {
+      if( $("#usersmark_mark_type").val() == "2") {
+        $("#usersmark_mark_type").val("3");
+        $(this).addClass("btn-warning");
+      } else {
+      if( $("#usersmark_mark_type").val() == "3") {
+        $("#usersmark_mark_type").val("2");
+        $(this).removeClass("btn-warning");
+      }}}}
+      //$(this).closest("form").submit();
+      $("#flags").submit();
+    });
+
+    $("#car").click(function(){
+      if( $("#usersmark_mark_type").val() == "0") {
+        $("#usersmark_mark_type").val("2");
+        $(this).addClass("btn-danger");
+      } else {
+      if( $("#usersmark_mark_type").val() == "1") {
+        $("#usersmark_mark_type").val("3");
+        $(this).addClass("btn-danger");
+      } else {
+      if( $("#usersmark_mark_type").val() == "2") {
+        $("#usersmark_mark_type").val("0");
+        $(this).removeClass("btn-danger");
+      } else {
+      if( $("#usersmark_mark_type").val() == "3") {
+        $("#usersmark_mark_type").val("1");
+        $(this).removeClass("btn-danger");
+      }}}}
+      //$(this).closest("form").submit(); 
+      $("#flags").submit();
+    });
+
+    //$("#usersmark_note").attr('title', '<%= t(:click_to_edit)%>');
+    $("#usersmark_note").prop('readonly', true);
+    $("#usersmark_note").click(function() {
+      $(this).prop('readonly', false);
+      //$(this).attr('title','');
+    });
+
+    $("#usersmark_note").change(function(){
+      $(this).prop('readonly', true);
+      //$(this).attr('title', '<%= t(:click_to_edit)%>');
+      $("#flags").submit();
+    });
+     $("#usersmark_note").blur(function() {
+      $(this).prop('readonly', true);
+      //$(this).attr('title','');
+    });
+
+  });
+</script>

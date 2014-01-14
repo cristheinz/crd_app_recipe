@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <p>Bem-Vindo ao Bimbyfy, <%= @user.name %></p>
+    <p>
+      O registo no site bimbyfy.com foi efectuado com sucesso, seu nome de utilizador é: <%= @user.email %>.<br/>
+    </p>
+    <p>
+      Para fazer login no site, siga este endereço: <%= @url %>. 
+    </p>
+
+    <p>Obrigado por se registar!</p>
+    <p><i>Chris,</i><br/>
+    Fundador do Bimbyfy</p>
+
+    <br/>
+    <p><small>Esta mensagem foi enviada a partir de um endereço de e-mail destinado apenas a notificações e que não aceita a receção de e-mails.<br/>Não responda a esta mensagem.</small></p>
+  </body>
+</html>

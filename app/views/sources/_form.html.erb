@@ -1,0 +1,38 @@
+<%= form_for(@source) do |f| %>
+  <% if @source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@source.errors.count, "error") %> prohibited this source from being saved:</h2>
+
+      <ul>
+      <% @source.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:title) %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label t(:publish_date) %><br />
+    <%= f.date_select :publish_date %>
+  </div>
+  <div class="field">
+    <%= f.label :image %> ATENÇÃO: a imagem deve ser redimensionada para 198x240.<br />
+    <%= f.file_field :image %>
+  </div>
+
+  <label class="checkbox inline">
+    <!--<%= f.check_box :public, :disabled => true  %> <%= t :public%>-->
+    <%= f.check_box :public %> <%= t :public%>
+  </label>
+
+  <!--<div class="field">
+    <p><span><%= t :public %> <%= f.check_box :public %></span></p>
+  </div>-->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

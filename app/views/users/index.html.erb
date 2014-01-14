@@ -1,0 +1,16 @@
+<h1>Listing users</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Email</th>
+    <th>Options</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+  	<td><%=user.email%></td>
+    <td><%= link_to 'Preview', user %> |
+    <%= link_to 'Destroy', user, method: :delete, data: { confirm: t(:are_you_sure?) } %></td>
+  </tr>
+<% end %>
+</table>

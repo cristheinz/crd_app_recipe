@@ -1,0 +1,43 @@
+<%= form_for(@recipe) do |f| %>
+  <%= render 'shared/error_messages', object: f.object if @recipe.errors.any? %>
+
+<div class="well row-fluid">
+  <div class="field">
+    <%= f.text_field :name, placeholder: "#{t(:new_recipe)}", class: "span12" %>
+  </div>
+
+  <% if current_user.admin? %>
+  <div class="field">
+    <%= f.select :source_id, @sources, class: "span12" %>
+  </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.select :category_id, @categories, class: "span12" %>
+  </div>
+
+  <div class="field">
+    <%= f.text_area :description, placeholder: "#{t(:preparation)}...", rows: 10, class: "span12" %>
+  </div>
+  <div class="field">
+    <%= f.text_area :note, placeholder: "#{t(:note)}...", rows: 3, class: "span12" %>
+  </div>
+
+  <% if current_user.admin? %>
+  <div class="field">
+    <%= f.label t :calories %>
+    <%= f.number_field :calories, class: "span3" %>
+  </div>
+  <% end %>
+
+  <label class="checkbox inline">
+    <%= f.check_box :shareable %> <%= t :share %>
+    <div class="alert"><%= t :sharing_msg %></div>
+  </label>
+
+  <div class="actions">
+    <%= f.submit t(:save), class: "btn btn-primary" %>
+    <%= link_to "Cancel", :back, class: "btn" %>
+  </div>
+</div>
+<% end %>

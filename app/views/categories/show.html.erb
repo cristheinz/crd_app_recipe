@@ -1,0 +1,58 @@
+<% provide(:title, @category.name) %>
+<div class="row">
+  <div class="span9">
+    <div class="center">
+      <h1><%= @category.name %></h1>
+      <p><%= "#{@num_recipes} #{t(:recipes)}" if @num_recipes.to_i>0 %></p>
+    </div>
+
+    <div class="tabbable">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab"><%= t(:sources)%></a></li>
+        <% if signed_in? %>
+        <li><a href="#tab3" data-toggle="tab"><%= "Meus #{t(:sources)}"%></a></li>
+        <% end %>
+        <li><a href="#tab2" data-toggle="tab"><%= t(:partners)%></a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <ul class="thumbnails ">
+            <%= render @recipes %>
+          </ul>
+          <div class="center">
+            <%= will_paginate @recipes %>
+          </div>
+        </div>
+
+        <% if signed_in? %>
+        <div class="tab-pane" id="tab3">
+          <ul class="thumbnails">
+            <%= render @user_recipes %>
+          </ul>
+          <div class="center">
+            <%= will_paginate @user_recipes %>
+          </div>
+        </div>
+        <% end %>
+
+        <div class="tab-pane" id="tab2">
+          <ul class="thumbnails">
+            <%= render @partners_recipes %>
+          </ul>
+          <div class="center">
+            <%= will_paginate @partners_recipes %>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="offset9" data-spy="affix">
+    <%= render 'shared/advertise_column' %>
+  </div>
+
+</div>
+
+<%= render 'usersmarks/form' if signed_in? %>

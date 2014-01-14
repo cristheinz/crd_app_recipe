@@ -1,0 +1,118 @@
+<div class="hero-unit center">
+	<h1>Bimbyfy</h1>
+	
+	<!--[if lt IE 9]>
+	<p>Data do lançamento: 18/08/2013</p>
+	<![endif]-->
+
+	<h2>Segundos para o lançamento:</h2>
+	<input type="text" class="dial">
+	<h3 id="countdown" style="color: red; margin-top: -120px;"></h3> 
+	<div style="margin-top: 120px;"><span class="muted">18-08</span></div>
+
+  <div class="fb-like" data-href="https://www.facebook.com/Bimbyfy" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_PT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</div>
+
+<script>
+$(function() {
+    $(".dial").knob()
+    .trigger(
+        'configure',
+        {
+        "min":0,
+        "max":1468800,
+        //"fgColor":"#FF0000",
+        "bgColor": "#FFFFFF",
+        //"skin":"tron",
+        "displayInput": false,
+        "thickness":".2",
+        "angleOffset": "180",
+        "inputColor": "#FF0000",
+        "cursor": false,
+        "readOnly": true//,
+        //"width": "200"
+        }
+    );
+});
+
+
+$(document).ready(function() {
+  var secs = parseInt( (new Date('2013-08-18') - new Date() ) * 0.001);
+  //var secs = 3600;
+  $('#countdown').countdown({
+    seconds  : secs,
+    callback : function() {
+    	location.reload();
+      //$('.box').removeClass('active').addClass('inactive');
+      //var v=$('.dial').val()-1;
+      //$('.dial').val(v).trigger('change');
+    }
+  });
+});
+
+jQuery.fn.extend({
+  countdown: function(settings, to) {
+    return this.each(function() {
+      jQuery.countdown.start(this, settings, to);
+    });
+  },
+  stopCountdown: function() {
+    return this.each(function() {
+      jQuery.countdown.stop(this);
+    });
+  }
+});
+
+jQuery.extend({
+  countdown: {
+    settings: {},
+
+    start: function(element, settings, to) {
+      if ((typeof this.settings.timerId == 'undefined') ||
+          (this.settings.timerId != $(element).data('countdown.id'))) {
+        this.settings = jQuery.extend({
+          timerId     : new Date().getTime(),
+          duration    : 1000,
+          seconds     : 10,
+          running     : true,
+          callback    : function() {}
+        }, settings);
+
+        $(element).data('countdown.id', this.settings.timerId);
+      }
+
+      settings = this.settings;
+      if (!to && to != 0) {
+        to = settings.seconds;
+      }
+
+      if (settings.running) {
+        $(element).text(to);
+
+        $(element).animate({ '' : '' }, settings.duration, '', function() {
+          if (settings.running && to > 0) {
+            $(this).text(to - 1).countdown(settings, to - 1);
+            $('.dial').val(to - 1).trigger('change');
+          } else if (settings.running) {
+            settings.callback(this);
+          }
+        });
+      }
+    },
+
+    stop: function(element) {
+      this.settings.running = false;
+    }
+  }
+});
+</script>

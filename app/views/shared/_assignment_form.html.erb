@@ -1,0 +1,28 @@
+<% unless home_page? %>
+<div class="alert">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Dica!</strong> <%=@tip.html_safe %>
+</div>
+<% end %>
+<%= form_for(:assignment, url: assignments_path) do |i| %>
+	<div class="field">
+	    <%= i.text_field :name, :class => "span3", :data => {:provide => "typeahead", :items => "8", :source => @ingredients.to_json }, class: "span4" %>
+	    <%= i.submit t(:add), class: "btn btn-primary" %>
+    	<%= link_to t(:clear), assignout_path, method: "delete", class: "btn btn-danger" if !home_page? %>
+  	</div>
+  	
+<% end %>
+
+<script>
+//jQuery($(function () {
+  $('.popover-test').popover({ 
+    class: "hidden-phone",
+    html : true,
+    title: "<strong>Dica!</strong>",
+    //content: "Para pesquisar qualquer tipo de queijo basta adicionar <u>queijo%</u>",
+    placement: "right"
+  }).popover('show');
+
+//});
+//  );
+</script>

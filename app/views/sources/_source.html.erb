@@ -1,0 +1,8 @@
+
+<li class="span4">
+	<div class="thumbnail">
+		<%= source.name %><br/>
+		<%= link_to image_tag(source.image.to_s, "data-src"=> "holder.js/300x200", size: "300x200", alt: "#{source.name}"), source unless source.image.to_s.empty? %>
+		<%= link_to image_tag(no_image_url, "data-src"=> "holder.js/300x200", size: "300x200", alt: "#{source.name}"), source if source.image.to_s.empty? %>
+	</div>
+</li>

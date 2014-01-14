@@ -1,0 +1,25 @@
+<% provide(:title, t(:recipes)) %>
+<div class="row span9">
+  <div class="center">
+    <h1><%= t(:recipes) %></h1>
+    <!--<p><%= "#{@recipes.size} #{t(:recipes)}" if @recipes %></p>-->
+  </div>
+
+  <% if @recipes.size==0 %>
+  	<span>Nenhuma receita encontrada. <%= link_to "Voltar", root_path %></span>
+  <% else %>
+    <ul class="thumbnails">
+      <%= render @recipes.uniq %>
+    </ul>
+    <div class="center">
+      <%= will_paginate @recipes %>
+    </div>
+  <% end %>
+
+</div>
+
+<div class="row offset9" data-spy="affix" data-offset-top="50" >
+  <%= render 'shared/advertise_column' %>
+</div>
+
+<%= render 'usersmarks/form' if signed_in? %>

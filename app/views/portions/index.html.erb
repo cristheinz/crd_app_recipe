@@ -1,0 +1,28 @@
+<h3><%= link_to @recipe.name, @recipe %></h3>
+<%="#{@portions.size} #{t(:ingredients)}."%>
+
+<div class="well">
+<%= render 'form' %>
+</div>
+
+<!--<p><%= link_to 'New Portion', new_portion_path(recipe_id: @recipe_id), class: "btn btn-primary" %></p>-->
+
+<table class="table table-striped">
+  <tr>
+    <!--<th>Recipe</th>-->
+    <th><%= t :portion%></th>
+    <%= "<th>#{t(:part)}</th>".html_safe if current_user.admin? %>
+    <th><%= t :options %></th>
+  </tr>
+
+<% @portions.each do |portion| %>
+  <% s="#{portion.portion} #{Ingredient.find(portion.ingredient_id).name} #{portion.note}" %>
+  <tr>
+    <!--<td><%= link_to portion.recipe.name, portion.recipe %></td>-->
+    <!--<td><%= link_to s, edit_portion_path(portion) %></td>-->
+    <td><%= s %></td>
+    <%= "<td>#{portion.part}</td>".html_safe if current_user.admin? %>
+    <td><%= link_to t(:destroy), portion, method: :delete, data: { confirm: t(:are_you_sure?) } %></td>
+  </tr>
+<% end %>
+</table>

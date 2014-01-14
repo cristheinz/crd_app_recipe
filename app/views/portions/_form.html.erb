@@ -1,0 +1,59 @@
+<%= form_for(@portion) do |f| %>
+  <!--<% if @portion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@portion.errors.count, "error") %> prohibited this portion from being saved:</h2>
+
+      <ul>
+      <% @portion.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>-->
+
+  <% if params[:recipe_id].nil? %>
+    <div class="field">
+      <%= f.label :recipe_id %><br />
+      <%= f.select :recipe_id, @recipes %>
+    </div>
+  <% else %>
+    <%= f.hidden_field :recipe_id, value: "#{params[:recipe_id]}"  %>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_field :part, placeholder: "#{t(:part)}" if current_user.admin? %>
+  </div>
+
+  <div class="offset3 muted"><%= t :ingredient %></div>
+  <div class="row-fluid">
+    <%= f.text_field :portion, class: "span3", placeholder: "#{t(:portion)}" %>
+
+    <%= fields_for @ingredient do |i| %>
+      <%= i.text_field :name, :class => "span3", :data => {:provide => "typeahead", :items => "8", :source => @ingredients.to_json } %>
+    <% end %>
+
+    <%= f.text_field :note, class: "span4", placeholder: "#{t(:observation)}" %>
+
+    <%= f.submit t(:add), class: "btn btn-primary" %>
+  </div>
+  <!--<div>
+    <%= f.label :ingredient_id, class: "offset3" %>
+    <div class="controls controls-row">
+      <%= f.text_field :portion, class: "span3", placeholder: "#{t(:portion)}" %>
+    
+      <%= fields_for @ingredient do |i| %>
+        <%= i.text_field :name, :class => "span3", :data => {:provide => "typeahead", :items => "8", :source => @ingredients.to_json } %>
+      <% end %>
+
+      <%= f.text_field :note, class: "span3", placeholder: "#{t(:observation)}" %>
+
+      <%= f.submit t(:add), class: "offset1 btn btn-primary" %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Add", class: "btn btn-primary" %>
+    <%= link_to "Cancel", portions_path(recipe_id: "#{params[:recipe_id]}"), class: "btn" unless params[:recipe_id].nil?%>
+    <%= link_to "Cancel", :back , class: "btn" if params[:recipe_id].nil?%>
+  </div>-->
+<% end %>
