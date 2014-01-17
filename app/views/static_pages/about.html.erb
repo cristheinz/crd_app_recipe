@@ -25,7 +25,12 @@
 </div>
 
 <div class="row offset1">
-	<h2 class="pull-left"><em>Faça já o seu registo.</em></h2>
+	<% if signed_in?%>
+		<h2 class="pull-left"><em>Funcionalidades exclusivas.</em></h2>
+	<%else%>
+		<h2 class="pull-left"><em>Faça já o seu registo.</em></h2>
+	
+	<%end%>
 </div>
 <div class="span10 offset1">
 	<p>
@@ -40,10 +45,12 @@
 		<li>Criar suas próprias receitas.</li>
 	</ul>
 	
+	<% unless signed_in?%>
 	<p>
 		Clique <%= link_to "aqui", signup_path %> para criar sua conta.
 		
 	</p>
+	<%end%>
 </div>
 
 <div class="row offset1">
