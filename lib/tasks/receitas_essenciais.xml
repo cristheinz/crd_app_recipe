@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sources>
-<source name="Bimby - As receitas essenciais" pub_date="2010-03-01">
+<source name="As receitas essenciais" pub_date="2010-03-01">
  <categories>
 
-  <category name="Funções Básicas">
+  <category name="Funções básicas">
    <recipes>
     <recipe name="Desfiar frango, bacalhau" page="16">
      <description>Depois de cozidos, sem ossos ou espinhas, coloque no copo de 300 em 300 g e programe 3-4 Seg. / Gira ao contrário / Vel. 4.
@@ -504,7 +504,7 @@
       <ingredient part="Ingredientes p/ o caramelo" portion="280 g">açúcar</ingredient>
       <ingredient part="Ingredientes p/ o caramelo" portion="gotas de sumo">limão</ingredient>
       <ingredient part="Ingredientes p/ o caramelo" portion="100 g">água</ingredient>
-      <ingredient part="Ingredientes p/ o molho" portion="230 g">açúcar amarelo</ingredient>
+      <ingredient part="Ingredientes p/ o molho" portion="230 g">açúcar mascavo</ingredient>
       <ingredient part="Ingredientes p/ o molho" portion="50 g">margarina</ingredient>
       <ingredient part="Ingredientes p/ o molho" portion="30 g">água</ingredient>
       <ingredient part="Ingredientes p/ o molho" portion="100 g">leite evaporado</ingredient>
@@ -1100,7 +1100,7 @@
       <ingredient portion="1000 g" note="descascada s/ pevides">meloa</ingredient>
       <ingredient portion="50 g">miolo de pão</ingredient>
       <ingredient portion="100 g">natas</ingredient>
-      <ingredient portion="500 g">água com gás</ingredient>
+      <ingredient portion="500 g">água c/ gás</ingredient>
       <ingredient part="Ingredientes p/ guarnecer" note="laminado">presunto</ingredient>
       <ingredient part="Ingredientes p/ guarnecer" note="laminadas e torradas">amêndoa</ingredient>
      </ingredients>
@@ -2486,7 +2486,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
      </description>
     </recipe>
 
-    <recipe name="Rolo de bacalhaui com brôa" calories="0" portions="8 PAX" prep_time="18 Min" difficult_level="MÉDIA" page="89">
+    <recipe name="Rolo de bacalhau com brôa" calories="0" portions="8 PAX" prep_time="18 Min" difficult_level="MÉDIA" page="89">
      <ingredients>
       <ingredient portion="500 g">brôa</ingredient>
       <ingredient portion="2 dentes">alho</ingredient>
@@ -2522,7 +2522,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
       <ingredient note="q.b.">pimenta</ingredient>
       <ingredient portion="4 ramos pequenos">alecrim</ingredient>
       <ingredient portion="800 g">água</ingredient>
-      <ingredient portion="250 g">cous-cous</ingredient>
+      <ingredient portion="250 g">cuscuz</ingredient>
       <ingredient portion="sumo de uma">laranja</ingredient>
       <ingredient portion="1 molho">agrião</ingredient>
      </ingredients>
@@ -2567,7 +2567,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
    </recipes>
   </category>
 
-  <category name="Carnes e Aves">
+  <category name="Carnes e aves">
    <recipes>
     <recipe name="Cozido à Portuguesa" calories="0" portions="4 PAX" prep_time="70 Min" difficult_level="MÉDIA" page="92">
      <ingredients>
@@ -3351,7 +3351,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
       <ingredient portion="60 g" note="ou amêndoa s/ sal">amendoim</ingredient>
       <ingredient portion="1100 g">água</ingredient>
       <ingredient portion="80 g" note="(agulha ou carolino, integral ou selvagem)">arroz</ingredient>
-      <ingredient portion="80 g">açúcar amarelo</ingredient>
+      <ingredient portion="80 g">açúcar mascavo</ingredient>
      </ingredients>
      <description>.</description>
     </recipe>
@@ -3361,7 +3361,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
       <ingredient portion="1000 g">leite de soja</ingredient>
       <ingredient portion="1 c. chá">ágar-ágar</ingredient>
       <ingredient portion="1">iogurte de soja</ingredient>
-      <ingredient portion="70 g">açúcar amarelo</ingredient>
+      <ingredient portion="70 g">açúcar mascavo</ingredient>
      </ingredients>
      <description>.</description>
     </recipe>
@@ -3490,7 +3490,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
       <ingredient portion="750 g">leite de soja</ingredient>
       <ingredient portion="1 c. chá">sal</ingredient>
       <ingredient note="q.b.">pimenta</ingredient>
-      <ingredient portion="1 c. chá">tominho</ingredient>
+      <ingredient portion="1 c. chá">tomilho</ingredient>
       <ingredient portion="1/2 c. chá">gengibre em pó</ingredient>
      </ingredients>
      <description>.</description>
@@ -3762,7 +3762,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
       <ingredient portion="1000 g">leite de soja</ingredient>
       <ingredient portion="casca de 1" note="ou laranja, só a parte amarela">limão</ingredient>
       <ingredient portion="1 pau">canela</ingredient>
-      <ingredient portion="100 g">açúcar amarelo</ingredient>
+      <ingredient portion="100 g">açúcar mascavo</ingredient>
       <ingredient portion="50 g">amido de milho</ingredient>
       <ingredient portion="1 c. chá" note="(opcional)">ágar-ágar</ingredient>
       <ingredient portion="1 pitada" note="marinho">sal</ingredient>
@@ -3848,7 +3848,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
       <ingredient portion="50 g" note="s/ pele">amêndoa</ingredient>
       <ingredient portion="50 g">nozes</ingredient>
       <ingredient portion="60 g">manteiga</ingredient>
-      <ingredient portion="70 g">açúcar amarelo</ingredient>
+      <ingredient portion="70 g">açúcar mascavo</ingredient>
       <ingredient portion="8">pêssego</ingredient>
       <ingredient portion="200 g golden syrup ou">caramelo líquido</ingredient>
       <ingredient portion="1000 g">água</ingredient>
@@ -3934,7 +3934,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
       <ingredient portion="100 g">açúcar</ingredient>
       <ingredient portion="220 g" note="(Digesta)">bolacha integral</ingredient>
       <ingredient portion="50 g">flocos de avelã</ingredient>
-      <ingredient portion="20 g">açúcar amarelo</ingredient>
+      <ingredient portion="20 g">açúcar mascavo</ingredient>
       <ingredient portion="60 g">manteiga</ingredient>
       <ingredient portion="400 g">queijo de barrar</ingredient>
       <ingredient portion="200 g">queijo mascarpone</ingredient>
@@ -4097,7 +4097,7 @@ Disponha a pescada no prato de servir com as batatas e cubra com o molho de toma
       <ingredient portion="40 g" note="ou 60 g farinha">maizena</ingredient>
       <ingredient portion="casca de 1" note=", só a parte amarela">limão</ingredient>
       <ingredient portion="1 pau">canela</ingredient>
-      <ingredient note="p/ polvilhar">açúcar mascavado</ingredient>
+      <ingredient note="p/ polvilhar">açúcar mascavo</ingredient>
      </ingredients>
      <description>.</description>
     </recipe>

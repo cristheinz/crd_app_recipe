@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+<source name="Revista Bimby, Momentos de Partilha N.º 37" pub_date="2013-12-01">
+ <categories>
+  <category name="Sopas quentes">
+   <recipes>
+    <recipe name="Creme de feijão branco e tomate" page="26" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+   </recipes>
+  </category>
+ </categories>
+</source>
+</sources>

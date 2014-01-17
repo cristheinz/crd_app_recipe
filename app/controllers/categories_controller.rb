@@ -23,17 +23,19 @@ class CategoriesController < ApplicationController
       ids = current_user.usersbooks.map {|b| b.source_id}
       @user_recipes = recipes.joins(:source).where("sources.public = ? and sources.id in (?)", true, ids)
       @user_recipes=@user_recipes.paginate(page: params[:page], per_page: 10)
+      @partners_recipes = recipes.joins(:source).where("sources.public != ? and sources.user_id=?", true, current_user.id)
+      @partners_recipes=@partners_recipes.paginate(page: params[:page], per_page: 10)
     end
-    @partners_recipes = recipes.joins(:source).where("sources.public != ?", true)
+    
     #@recipes = []
     #@category.recipes.order("name").each do |recipe|
     #  if recipe.shareable? || current_user?(recipe.user)
     #    @recipes.push(recipe) if recipe.source.public?
     #  end
     #end
-    @num_recipes=@recipes.size
+    @num_recipes=@recipes.size+@partners_recipes.size
     @recipes=@recipes.paginate(page: params[:page], per_page: 10)
-    @partners_recipes=@partners_recipes.paginate(page: params[:page], per_page: 10)
+    
 
     respond_to do |format|
       format.html # show.html.erb

@@ -126,6 +126,7 @@ class PortionsController < ApplicationController
   private
     def has_recipe_id_param
       redirect_to root_path unless params[:recipe_id]
+      redirect_to root_path unless Recipe.find_by_id(params[:recipe_id]).user==current_user
     end
 
     def load
@@ -136,7 +137,8 @@ class PortionsController < ApplicationController
     def set_ingredient
       unless params[:ingredient][:name].empty?
         ingredient = Ingredient.find_by_name(params[:ingredient][:name])
-        ingredient=Ingredient.create!(params[:ingredient]) if ingredient.nil? && current_user.admin?
+        #não deixo que se criem ingredientes
+        #ingredient=Ingredient.create!(params[:ingredient]) if ingredient.nil? && current_user.admin?
         if ingredient
           params[:portion][:ingredient_id] = ingredient.id
         end

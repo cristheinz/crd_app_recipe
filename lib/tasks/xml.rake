@@ -54,7 +54,7 @@ namespace :xml do
     #args.with_defaults(element: "source")
     args.with_defaults(element: "ingredient")
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/receitas_utf8.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201310_revista_35.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("#{args[:element]}").each do |node|
@@ -67,6 +67,54 @@ namespace :xml do
     f.close
   end
 
+  desc "List XML data" 
+  task :ingredientstoinsert => :environment do
+    require 'nokogiri'
+    f = File.open("#{Rails.root}/lib/tasks/201310_revista_35.xml")
+    doc = Nokogiri::XML(f)
+    i_array = []
+    doc.css("ingredient").each do |node|
+      children = node.children
+      s=node.inner_text 
+      ingredient=Ingredient.find_by_name(s.downcase)
+      i_array.push(s) unless i_array.include?(s) || ingredient
+    end
+    puts i_array.sort
+    f.close
+  end
+  
+  desc "List XML data" 
+  task :aaa => :environment do
+    #require 'nokogiri'
+    #f = File.open("#{Rails.root}/lib/tasks/201310_revista_35.xml")
+    #doc = Nokogiri::XML(f)
+    i_array = []
+    #i_array.push("id;tbl;usr;src;rec")
+    User.all.each do |user|
+      user.usersbooks.each do |book|
+        source = Source.find(book.source_id)
+        #i_array.push(book.id.to_s+";books;"+user.id.to_s+";"+source.name+";")
+        i_array.push(id: book.id, tbl: "books", usr: user.id, src: source.name, rec: "")
+      end
+      user.usersmarks.each do |mark|
+        recipe = Recipe.find(mark.recipe_id)
+        source = Source.find(recipe.source_id)
+        #i_array.push(mark.id.to_s+";marks;"+user.id.to_s+";"+source.name+";"+recipe.name) if source.public?
+        i_array.push(id: mark.id, tbl: "marks", usr: user.id, src: source.name, rec: recipe.name) if source.public?
+      end
+    end
+    #puts i_array
+    i_array.each do |a|
+      puts "id : "+a[:id].to_s
+      puts "tbl: "+a[:tbl]
+      puts "usr: "+a[:usr].to_s
+      puts "src: "+a[:src]
+      puts "rec: "+a[:rec]
+      puts "**************"
+    end
+  end
+  
+
   desc "Import XML into Database" 
   task :import => :environment do
     require 'nokogiri'
@@ -74,6 +122,7 @@ namespace :xml do
     #f = File.open("#{Rails.root}/lib/tasks/massas_e_doces.xml")
     #f = File.open("#{Rails.root}/lib/tasks/201308_revista_33.xml")
     #f = File.open("#{Rails.root}/lib/tasks/201309_revista_34.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201310_revista_35.xml")
     #f = File.open("#{Rails.root}/lib/tasks/paosaloio.xml")
     #f = File.open("#{Rails.root}/lib/tasks/receitas_utf8.xml")
     doc = Nokogiri::XML(f)
@@ -83,9 +132,9 @@ namespace :xml do
     user=User.find_by_name("admin")
     unless user
       user=User.create(name: "admin", 
-        email: "foo@bar.com", 
-        password: "foo", 
-        password_confirmation: "foo")
+        email: "admin@somewhere.com", 
+        password: "password", 
+        password_confirmation: "password")
       user.admin='t'
       if user.save
         puts "user save ....[OK]"
@@ -149,7 +198,7 @@ namespace :xml do
               i_name= i.inner_text
               ingredient=Ingredient.find_by_name(i_name.downcase)
               unless ingredient
-                puts "new ingrediente: #{i_name}"
+                puts "new ingredient: #{i_name}"
                 ingredient=Ingredient.create!(
                   name: i_name)
               end
@@ -175,6 +224,6 @@ namespace :xml do
     puts "#{Category.count} Categories"
     puts "#{Recipe.count} Recipes"
     puts "#{Ingredient.count} Ingredients"
-    puts Recipe.first.name
+    puts Recipe.last.name
   end
 end

@@ -1,76 +1,27 @@
 <% provide(:title, t(:sources)) %>
-<!--<h1>Listing sources</h1>-->
+
 <h1><%= t :sources %></h1>
 
 <% if signed_in? && current_user.admin? %>
- <p><%= link_to t(:new_source), new_source_path, class: "btn btn-primary" %></p>
-
- <table class="table table-striped">
-  <tr>
-    <th><%= t :title %></th>
-    <th><%= t :publish_date %></th>
-    <th><%= t :options %></th>
-  </tr>
-
- <% @sources.each do |source| %>
-  <tr>
-    <td><%= link_to source.name, source %></td>
-    <td><%= source.publish_date %></td>
-    
-    <td><%= link_to t(:edit), edit_source_path(source) %> |
-    <!--<%= link_to 'Recipes', recipes_path(source_id: source.id) %> |-->
-    <%= link_to t(:destroy), source, method: :delete, data: { confirm: t(:are_you_sure?) } %></td>
-  </tr>
- <% end %>
- </table>
- <% else %>
-  <ul class="thumbnails">
-  <% if !home_page? && signed_in? %>
-     <% @sources.each do |source| %>
-      <li class="span3">
-        <div class="thumbnail">
-          <%= form_for(current_user.usersbooks.build(source_id: source.id), remote: true) do |f| %>
-            <%= f.hidden_field :source_id %>
-            <%= f.label "task" do %>
-              <%= f.check_box "task", {:checked=>source.is_usersbook(current_user.id)}, checked_value: source.id %> <%= source.name %>
-            <% end %>
-            <%= f.submit %>
-          <% end %>
-
-          <%= link_to image_tag(source.image.to_s, "data-src"=> "holder.js/300x200", size: "300x200", alt: "#{source.name}"), source %>
-        </div>
-      </li>
-    <% end %>
-  <%else%>
-    <%= render @sources %>
-  <% end %>
-  </ul>
+	<p><%= link_to t(:new_source), new_source_path, class: "btn btn-primary" %></p>
+	<table class="table table-striped">
+		<tr>
+			<th><%= t :title %></th>
+    		<th><%= t :publish_date %></th>
+    		<th><%= t :options %></th>
+  		</tr>
+	<% @sources.each do |source| %>
+  		<tr>
+    		<td><%= link_to source.name, source %></td>
+    		<td><%= source.publish_date %></td>
+    		<td><%= link_to t(:edit), edit_source_path(source) %> |
+    			<%= link_to t(:destroy), source, method: :delete, data: { confirm: t(:are_you_sure?) } %>
+    		</td>
+  		</tr>
+ 	<% end %>
+ 	</table>
+<% else %>
+	<ul class="nav nav-pills ">
+    	<%= render @sources %>
+  	</ul>
 <% end %>
-
-<script>
-  jQuery(function($){
-    // grab the form in this closure;
-    //var form = $("form#books");
-
-    // hide the submit button
-    //form.find("input[type=submit]").hide();
-    $("input[type=submit]").hide();
-
-    // set the click handler
-    //$("#usersbook_source_id").click(function(){
-    //  form.submit();
-    //  alert("document is ready");
-    //});
-    //form.find("input[type=checkbox]").click(function(){
-      //alert($('#_service').attr('value'));
-      //alert($('label[for=_source_id]').text());
-      //alert($(this).parent().text().trim());
-      //alert("document is ready");
-      //form.submit();
-    //});
-    $("input[type=checkbox]").click(function(){
-      $(this).closest("form").submit();
-    });
-
-  });
-</script>

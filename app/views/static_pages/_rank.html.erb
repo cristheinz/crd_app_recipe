@@ -1,0 +1,45 @@
+<li class="span12">
+	<% if !signed_in? %>
+    	<%= select_tag :source_opt, options_for_select([[t(:source), 0]], params[:source_opt]), name: "s2", class: "span4" %>
+	<% else %>
+    	<%= select_tag :source_opt, options_for_select([[t(:source), 0], ["Meus #{t(:source)}", 1], [t(:my_cookbook), 2]], params[:source_opt]), name: "s2", class: "span4" %>
+	<% end %>
+	<%= select_tag :category_opt, options_from_collection_for_select(@cats, :id, :name, params[:category_opt]), prompt: t(:category), class: "span4" %>
+	<%= select_tag :order_opt, options_for_select([["Correnspondência de ingredientes", 0], ["Percentagem da receita", 1], ["Dificuldade", 2], ["Tempo de preparação", 3]], params[:order_opt]), class: "span4" %>
+</li>
+
+<%= render 'result'%>
+
+
+
+<script>
+  jQuery(function($){
+    var url = $(location).attr('href').replace(/&page=[^&;]*/,'');
+
+    $('[name="s1"]').change(function(){
+      url = url.replace(/&source_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({source_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+    $('[name="s2"]').change(function(){
+      url = url.replace(/&source_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({source_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+
+    $("#category_opt").change(function(){
+      url = url.replace(/&category_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({category_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+    $("#order_opt").change(function(){
+      url = url.replace(/&order_opt=[^&;]*/,'');
+      url = url+"&"+jQuery.param({order_opt: $(this).val()});
+      window.location.href = url;
+    });
+
+  });
+</script>

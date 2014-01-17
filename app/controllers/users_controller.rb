@@ -18,15 +18,15 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      #@source = @user.sources.build(name: @user.name, publish_date: @user.created_at, public: "f", image: "")
-      #if @source.save
+      @source = @user.sources.build(name: @user.id, publish_date: @user.created_at, public: "f", image: "")
+      if @source.save
         UserMailer.welcome_email(@user).deliver
         sign_in @user
         flash[:success] = t(:welcome_notice)
         redirect_to root_path# if @user.admin?
-      #else
-      #  render 'new'
-      #end  
+      else
+        render 'new'
+      end  
     else
       render 'new'
     end

@@ -1,8 +1,10 @@
-<div class="hidden-phone" >
-	<%= render 'layouts/ads4'%>
+<div class="visible-desktop" >
+	<%if Rails.env.production?%>
+		<%= render 'layouts/ads5'  %>
+	<%else%>
+		<div style="background-color: gray; width:300px; height:250px;"><h2>Afiliados</h2></div>
+	<%end%>
+	<!--<span class="span4"><small>Ajude a manter o Bimbyfy!</small></span>
+  	<%= render 'layouts/donate' %>-->
 
-	<!--<div style="background-color: gray; widht:250px; height:250px;"><h2>Afiliados</h2></div>-->
-
-	<!--<span class="span4"><small>Ajude a manter o Bimbyfy!</small></span>-->
-  	<%= render 'layouts/donate' %>
 </div>

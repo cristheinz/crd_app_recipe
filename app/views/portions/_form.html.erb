@@ -29,7 +29,8 @@
     <%= f.text_field :portion, class: "span3", placeholder: "#{t(:portion)}" %>
 
     <%= fields_for @ingredient do |i| %>
-      <%= i.text_field :name, :class => "span3", :data => {:provide => "typeahead", :items => "8", :source => @ingredients.to_json } %>
+      <!--<%= i.text_field :name, :class => "span3", :data => {:provide => "typeahead", :items => "8", :source => @ingredients.to_json } %>-->
+      <%= i.text_field :name, "autocomplete"=>"off", class: "span4 mt", "data-provide"=>"typeahead"%>
     <% end %>
 
     <%= f.text_field :note, class: "span4", placeholder: "#{t(:observation)}" %>
@@ -57,3 +58,19 @@
     <%= link_to "Cancel", :back , class: "btn" if params[:recipe_id].nil?%>
   </div>-->
 <% end %>
+
+<%= javascript_tag "var ingredients = #{ @ingredients.to_json };" %>
+<script>
+$('.mt').typeahead({
+	source: ingredients,
+	items: 5,
+	matcher: function(item) {
+		var q=this.query.latinize()
+		var i=item.latinise()
+		if (i.toLowerCase().indexOf(q.trim().toLowerCase()) == 0) {
+			return true
+		}
+    }
+})
+
+</script>

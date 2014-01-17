@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sources>
-<source name="Bimby - Massas e doces" pub_date="2011-01-01">
+<source name="Massas e doces" pub_date="2011-01-01">
  <categories>
   <category name="Massas">
    <recipes>
@@ -74,7 +74,7 @@
       <ingredient portion="280 g">leite</ingredient>
       <ingredient portion="25 g">margarina p/ culinária</ingredient>
       <ingredient portion="5 g">sal</ingredient>
-      <ingredient portion="10 g" note="ou mel">açúcar amarelo</ingredient>
+      <ingredient portion="10 g" note="ou mel">açúcar mascavo</ingredient>
       <ingredient portion="25 g">fermento padeiro fresco</ingredient>
       <ingredient portion="20 g">sementes de linhaça</ingredient>
       <ingredient portion="20 g">sementes de sésamo</ingredient>
@@ -186,7 +186,7 @@
       <ingredient part="Ingredientes p/ o recheio" portion="100 g" note="aos pedaços">tomate</ingredient>
       <ingredient part="Ingredientes p/ o recheio" portion="400 g" note="demolhado e desfiado">bacalhau</ingredient>
       <ingredient part="Ingredientes p/ o recheio" portion="100 g" note="(opcional)">passas de uva</ingredient>
-      <ingredient part="Ingredientes p/ o recheio" portion="50 g">pimentos morrones</ingredient>
+      <ingredient part="Ingredientes p/ o recheio" portion="50 g">pimento morrone</ingredient>
       <ingredient part="Ingredientes p/ o recheio" note="q.b.">sal</ingredient>
       <ingredient part="Ingredientes p/ o recheio" note="q.b.">pimenta</ingredient>
       <ingredient part="Ingredientes p/ a massa" portion="100 g">água</ingredient>
@@ -432,7 +432,7 @@
       <ingredient part="Ingredientes p/ o recheio de maçã" portion="sumo de 1">limão</ingredient>
       <ingredient part="Ingredientes p/ o recheio de maçã" note="q.b.">noz-moscada</ingredient>
       <ingredient part="Ingredientes p/ o recheio de maçã" portion="40 g">vinho branco</ingredient>
-      <ingredient part="Ingredientes p/ o recheio de maçã" portion="100 g">açúcar amarelo</ingredient>
+      <ingredient part="Ingredientes p/ o recheio de maçã" portion="100 g">açúcar mascavo</ingredient>
       <ingredient part="Ingredientes p/ o recheio de maçã" portion="1 c. chá">canela</ingredient>
      </ingredients>
      <description>.</description>
@@ -650,7 +650,7 @@
      <ingredients>
       <ingredient part="Ingredientes p/ o bolo" portion="320 g">farinha</ingredient>
       <ingredient part="Ingredientes p/ o bolo" portion="3 c. chá">fermento em pó p/ bolos</ingredient>
-      <ingredient part="Ingredientes p/ o bolo" portion="320 g">açúcar amarelo</ingredient>
+      <ingredient part="Ingredientes p/ o bolo" portion="320 g">açúcar mascavo</ingredient>
       <ingredient part="Ingredientes p/ o bolo" portion="6">ovo</ingredient>
       <ingredient part="Ingredientes p/ o bolo" portion="100 g">óleo</ingredient>
       <ingredient part="Ingredientes p/ o bolo" portion="60 g" note="preparado forte">café</ingredient>
@@ -1161,7 +1161,7 @@
       <ingredient portion="500 g" note="aos pedaços">chocolate p/ culinária</ingredient>
       <ingredient portion="130 g" note="à temperatura ambiente">manteiga</ingredient>
       <ingredient portion="1 c. chá">essência de baunilha</ingredient>
-      <ingredient portion="80 g">açúcar amarelo</ingredient>
+      <ingredient portion="80 g">açúcar mascavo</ingredient>
       <ingredient portion="50 g">açúcar</ingredient>
       <ingredient portion="1">ovo</ingredient>
       <ingredient portion="150 g">farinha</ingredient>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+<source name="Revista Bimby, Momentos de Partilha N.º 38" pub_date="2014-01-01">
+ <categories>
+  <category name="Sopas quentes">
+   <recipes>
+    <recipe name="Creme de feijão branco e tomate" page="26" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Sopa de couve-flor com grelos" page="40" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Vichyssoise de agrião" page="32" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Entradas">
+   <recipes>
+    <recipe name="Alheira com bróculos e ovos de codorniz" page="24" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Bolinhos de bacalhau recheados com azeitona" page="40" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Pão com queijo e malagueta" page="25" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Queijo fresco e requeijão" page="15" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Queijo mascarpone" page="20" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Queques de patê de castanhas" page="24" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Acompanhamentos">
+   <recipes>
+    <recipe name="Massa fresca" page="18" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+   </recipes>
+  </category>
+
+  <category name="Peixe e marisco">
+   <recipes>
+    <recipe name="Brandade de bacalhau" page="21" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Empadão da consoada" page="38" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Risoto preto com camarão" page="27" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Carnes e aves">
+   <recipes>
+    <recipe name="Coelho à diplomata" page="30" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Crepes limpa-frigoríficos" page="39" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Empadão de javali" page="29" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Favas com codornizes" page="30" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Fiambre com crosta de massa" page="22" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Frango com vinho e molho de romã" page="32" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Frango guisado com azeitonas verdes" page="43" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Perdizes com pistácios" page="31" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Vegetariano">
+   <recipes>
+    <recipe name="Arroz selvagem com couve e cebola caramelizadas" page="41" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Massa com frutos secos e tomate seco" page="42" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Couve-flor gratinada com natas e coentros" page="42" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Otros pratos">
+   <recipes>
+    <recipe name="Creme de legumes e frango com ervilhas, feijão verde, cenouras e ovos escalfados" page="37" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+   </recipes>
+  </category>
+
+  <category name="Lanche">
+   <recipes>
+    <recipe name="Barra de cereais" page="20" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Bolo de ananás" page="34" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Bolos da sorte" page="28" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Croissants com recheio de framboesa, nozes e chocolate" page="45" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Mini pães-de-ló" page="23" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Reis de limão" page="11" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Tarteletes de limão" page="44" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Trança inglesa" page="33" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Sobremesas">
+   <recipes>
+    <recipe name="Bolo intenso de chocolate" page="44" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Mousse de manjericão" page="7" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Panacota de caramelo" page="26" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Pudim de queijo da Serra, creme de laranja e hortelã" page="49" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+   </recipes>
+  </category>
+
+  <category name="Bebidas">
+   <recipes>
+    <recipe name="Sumo detox" page="36" calories="149 Kcal" portions="6 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+   </recipes>
+  </category>
+
+ </categories>
+</source>
+</sources>

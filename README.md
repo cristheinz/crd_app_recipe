@@ -1,6 +1,6 @@
 # Installation
 
-## Replace sensitive information (marked as ?) in files:
+## Replace sensitive information in files:
 * /config/database.yml
 * /config/environments/production.rb
 * /lib/tasks/xml.rake
@@ -9,7 +9,7 @@
     $ bundle install
 
 ## Creates database:
-    $ bundle exec rake db:migrate
+    $ bundle exec rake db:migrate RAILS_ENV="production"
 
 ## Select sources:
     $ vim /lib/tasks/xml.rake

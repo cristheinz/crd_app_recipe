@@ -1,1 +1,5 @@
-<div class="fb-like-box" data-href=" www.facebook.com/Bimbyfy" data-width="292" data-show-faces="true" data-stream="false" data-show-border="false" data-header="true"></div>
+<%if Rails.env.production? %>
+	<div class="fb-like-box" data-href=" www.facebook.com/Bimbyfy" data-width="292" data-show-faces="true" data-stream="false" data-show-border="false" data-header="true"></div>
+<%else%>
+	<div style="background-color: gray; width:292px; height:300px;"><h2>fBox</h2></div>
+<%end%>

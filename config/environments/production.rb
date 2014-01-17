@@ -69,10 +69,10 @@ CrdAppRecipe::Application.configure do
   #mail config
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-  :address              => '?',
+  :address              => 'smtp.somewhere.com',
   :port                 => 3535,
-  :user_name            => '?',
-  :password             => '?',
+  :user_name            => 'admin@somewhere.com',
+  :password             => 'password',
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
 end

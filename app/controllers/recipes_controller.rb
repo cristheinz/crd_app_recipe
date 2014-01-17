@@ -11,10 +11,11 @@ class RecipesController < ApplicationController
   # GET /recipes.json
   def index
     #@recipes = Recipe.all
+    
     if params[:source_id].nil?
       #@recipes = Recipe.joins(:source).where("user_id = ?",current_user.id)
       if params[:search]
-        @recipes = Recipe.where("name like '%#{params[:search]}%'")
+        @recipes = Recipe.where("name like '%#{params[:search]}%' and shareable != 'f'")
         @recipes=@recipes.paginate(page: params[:page], per_page: 10)
         respond_to do |format|
           format.html # index.html.erb
@@ -103,7 +104,8 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(params[:recipe])
     unless current_user.admin?
       @source=current_user.sources.first
-      @recipe = @source.recipes.build(params[:recipe]) 
+      @recipe = @source.recipes.build(params[:recipe])
+      #@recipe.shareable='f' #vem nil não é preciso 
     end
 
     respond_to do |format|

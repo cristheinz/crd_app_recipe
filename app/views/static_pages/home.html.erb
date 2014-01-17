@@ -1,103 +1,82 @@
 <% provide(:title, t(:slogan)) %>
+
 <% if !assigned_in? %>
-  <div class="hero-unit center span6 offset2">
-    <h1>Bimby<span class="crd-fy">fy</span></h1>
-    <p class="hidden-phone"><i><%=t :slogan %></i></p>
-    <small class="muted"><%=t :suggest %></small>
-    <%= render 'shared/assignment_form' %>
-    <!-- Place this tag where you want the +1 button to render. -->
-    <div class="g-plusone" data-annotation="inline" data-width="300"></div>  
-  </div>
+	<div class="hero-unit center span8 offset1">
+    	<h1>Bimby<span class="crd-fy">fy</span></h1>
+    	<p class="hidden-phone"><i><%=t :slogan %></i></p>
+    	<small class="muted"><%=t :suggest %></small>
+    	
+    	<%= render 'shared/assignment_form' %>
+    
+    	<center>
+    		<%= render 'layouts/google_plus_1_btn' %>
+  			<%= render 'layouts/fb_like_btn' %>
+  		</center>
+  	</div>
 
-  <div class="row-fluid">
-    <div class="span8">
-      <div class="row-fluid">
-      <div class="span4">
-        <h2><%= t :sources %></h2>
+  	<div class="row-fluid span9 offset1">
+  		<div class="">
+  			<div class="row-fluid">
+  				<div class="span3">
+  					<h2><%= t :sources %></h2>
 
-        <div id="myCarousel" class="carousel slide">
-          <div class="carousel-inner">
-          <% @sources.each do |s| %>
-            <div class="item <%= "active" if s.id<2 %>">
-              <%= link_to image_tag(s.image.to_s, "data-src"=> "holder.js/300x200", size: "300x200", alt: "#{s.name}"), sources_path, class: "thumbnail" %>
-              <div class="carousel-caption">
-                <p><%= link_to s.name, s %></p>
-              </div>
-            </div>
-          <% end %>
-          </div>
-          <!-- Carousel nav
-          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>-->
-          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-        </div>
+        			<div id="myCarousel" class="carousel slide">
+          				<div class="carousel-inner">
+          					<% @sources.each do |s| %>
+            					<div class="item <%= "active" if s.id<2 %>">
+              						<!--<%= link_to image_tag(s.image.to_s, "data-src"=> "holder.js/300x200", size: "300x200", alt: "#{s.name}"), sources_path, class: "thumbnail" %>-->
+              						<%= link_to image_tag(s.image.to_s, size: "198x240"), sources_path, class: "thumbnail" %>
+              						<div class="carousel-caption">
+                						<p><%= link_to s.name, s %></p>
+              						</div>
+            					</div>
+          					<% end %>
+          				</div>
+          				<!-- Carousel nav-->
+          				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        			</div>
+      			</div>
 
-      </div>
+      			<div class="span6">
+        			<h2><%= t :categories %></h2>
+        			<ul class="nav nav-pills ">
+        				<% Category.order("name").each do |c| %>
+          					<li><%= link_to c.name, c %></li>
+        				<% end %>
+        			</ul>
+      			</div>
+      		</div>
+	    </div>
+  	</div>
 
-      <div class="span8">
-        <h2><%= t :categories %></h2>
-        <ul class="nav nav-pills ">
-        <% Category.order("name").each do |c| %>
-          <li><%= link_to c.name, c %></li>
-        <% end %>
-        </ul>
-        
-      </div>
-      </div>
-
-
-
-    </div>
-
-    <div class="span4">
-      <!-- facebook like box -->
-      <%= render 'layouts/fb_like_box' %>
-      
-      
-
-      <!-- google adsense -->
-      <%= render 'layouts/ads5' %>
-
-      <!--<div style="background-color: gray; widht:250px; height:250px;">
-        <h2>Afiliados</h2>
-      </div>-->
-
-      <!-- paypal donate -->
-      <!--<span class="span4"><small>Ajude a manter o Bimbyfy!</small></span>-->
-      <%= render 'layouts/donate' %>
-    </div>
-  </div>
+  	<div class="span12">
+  		<%= render 'shared/advertise_row' %>
+  	</div>
 
 <% else %>
-
-  <div>
-    <%= render 'shared/assignment_form' %>
-  </div>
+	<div>
+    	<%= render 'shared/assignment_form' %>
+  	</div>
   
-  <div class="center hero-unit">
-    <p><%= t(:avaible_ingredients) %></p>
-    <div class="row">
-      <ul class="nav">
-      <% current_list.each do |i| %>
-        <li class="label span crd-label"><%= i.html_safe %><%= link_to "&times;".html_safe, remove_path(ingredient_name: i ), method: "delete", class: "close" %></li>
-      <% end %>
-      </ul>
-    </div>
-  </div>
+  	<div class="center hero-unit">
+    	<p><%= t(:avaible_ingredients) %></p>
+    	<div class="row">
+      		<ul class="nav">
+      			<% current_list.each do |i| %>
+        			<li class="label span crd-label"><%= i.html_safe %><%= link_to "&times;".html_safe, remove_path(ingredient_name: i ), method: "delete", class: "close" %></li>
+      			<% end %>
+      		</ul>
+    	</div>
+  	</div>
 
-  <% if @result.size>0 %>
-  <div id="pub" class="hidden-phone">
-    <%= render 'layouts/ads1'%>
-  </div>
-  
-
-  <ul class="thumbnails">
-    <%= render 'result' %>
-  </ul>
-
-  <% else %>
-    <span>Nenhuma receita encontrada. <%= link_to "Voltar", root_path %></span>
-
-  <% end %>
-
+  	<% if @result.size>0 %>
+  		<%= render 'shared/advertise_row' %>
+		<ul class="thumbnails">
+    		<%= render 'rank' %>
+  		</ul>
+	<% else %>
+    	<span>Nenhuma receita encontrada. <%= link_to "Voltar", root_path %></span>
+  	<% end %>
 
 <% end %>

@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+<source name="Momentos de Partilha N.35" pub_date="2013-10-01">
+ <categories>
+  <category name="Sopas quentes">
+   <recipes>
+    <recipe name="Sopa de mexilhão, salmão e vieiras" page="16" calories="576 Kcal" portions="6 Doses" prep_time="83 Min" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient part="Ingredientes p/ o caldo de peixe" portion="1000 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de peixe" portion="1" note="(aprox. 250 g)">cabeça de pescada</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de peixe" portion="30 g" note="cortado em pedaços">talos de aipo</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de peixe" portion="100 g" note="cortado em pedaços grandes">alho francês</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de peixe" portion="150 g" note="cortado em pedaços grandes">cenoura</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de peixe" portion="5 g" note="(salsa, coentros, hortelã, aneto)">ramo de cheiros</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de peixe" portion="1 1/2 c. sopa">sal</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="15 pés" note="só as folhas">salsa</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="15 pés" note="só a rama">aneto</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="250 g">vinho branco</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="1000 g" note="com casca">mexilhão</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="1 c. chá">açafrão da índia</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="1 c. chá">colorau</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="200 g">natas</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="25 g">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="500 g">salmão</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="350 g">miolo de vieira</ingredient>
+	  <ingredient part="Ingredientes p/ a sopa" portion="40 g">limão</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+   </recipes>
+  </category>
+
+  <category name="Entradas">
+   <recipes>
+    <recipe name="Bruschetta de iogurte e tomate" page="40" calories="304 Kcal" portions="4 Unidades" prep_time="8 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="50 g">queijo da ilha</ingredient>
+	  <ingredient portion="8 fatias" note="de véspera">pão alentejano</ingredient>
+	  <ingredient portion="250 g">iogurte natural</ingredient>
+	  <ingredient portion="20 g" note=",mais q.b. p/ untar">azeite</ingredient>
+	  <ingredient portion="2 dentes">alho</ingredient>
+	  <ingredient portion="250 g">cebola</ingredient>
+	  <ingredient portion="200 g" note="em pedaços">tomate</ingredient>
+	  <ingredient portion="10 g" note="só as folhas">coentro</ingredient>
+	  <ingredient portion="1 c. chá" >sal</ingredient>
+	  <ingredient portion="1 pitada">pimenta</ingredient>
+	  <ingredient portion="1 c. chá" note="em pó">cominho</ingredient>
+	  <ingredient portion="1/2 c. chá">açafrão</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+    <recipe name="Vol-au-vent de camarão" page="17" calories="678 Kcal" portions="6 Doses" prep_time="15 Min" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient portion="600 g">massa folhada</ingredient>
+	  <ingredient portion="2 gemas">ovo</ingredient>
+      <ingredient portion="250 g" note="c/ casca">camarão</ingredient>
+      <ingredient portion="500 g">leite</ingredient>
+      <ingredient portion="60 g" note=",mais q.b. p/ polvilhar">farinha</ingredient>
+      <ingredient portion="40 g">manteiga</ingredient>
+      <ingredient portion="1/2">limão</ingredient>
+      <ingredient portion="1 c. chá">mostarda</ingredient>
+      <ingredient portion="1 c. chá">sal</ingredient>
+      <ingredient portion="1 pitada" note="opcional">pimenta de cayenne</ingredient>
+      <ingredient portion="q.b." note="picada p/ servir">salsa</ingredient>	  
+     </ingredients>
+     <description>.</description>
+    </recipe>
+
+	</recipes>
+  </category>
+
+  <category name="Acompanhamentos">
+   <recipes>
+    <recipe name="Chutney de cebola e figos" page="34" calories="244 Kcal" portions="700g aprox." prep_time="45 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="35 g">azeite</ingredient>
+	  <ingredient portion="700 g" note=",cortada em gomos finos">cebola</ingredient>
+	  <ingredient portion="2 dentes" note="laminado">alho</ingredient>
+	  <ingredient portion="150 g" note="cortados às rodelas">figo seco</ingredient>
+	  <ingredient portion="200 g">vinagre de vinho tinto</ingredient>
+	  <ingredient portion="50 g">licor beirão</ingredient>
+	  <ingredient portion="5-10 grãos">pimenta da jamaica</ingredient>
+	  <ingredient portion="1 c. chá">gengibre em pó</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="150 g">açúcar mascavo</ingredient>
+	  <ingredient portion="3 estrelas">anis</ingredient>
+	  <ingredient portion="50 g">mel</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Fantasmas no empadão" page="18" calories="371 Kcal" portions="6 Doses" prep_time="55 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ o recheio" portion="170 g">cebola</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 dente">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="30 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="150 g" note="fresca sem pele">salsicha</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="350 g">carne picada</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="200 g" note="em pedaços">tomate</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="15 g">vinho branco</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 pitada">orégãos</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="4 folhas">manjericão</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o puré" portion="800 g" note="(de casca vermelha p/ fritar), cortada em pedaços">batata</ingredient>
+	  <ingredient part="Ingredientes p/ o puré" portion="300 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ o puré" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o puré" portion="20 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ o puré" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o puré" portion="1 pitada">noz-moscada</ingredient>
+	  <ingredient part="Ingredientes p/ o puré" portion="4 claras">ovo</ingredient>
+	  <ingredient part="Ingredientes p/ o puré" portion="2 c. sopa">ketchup</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+   </recipes>
+  </category>
+
+  <category name="Vegetariano">
+   <recipes>
+    <recipe name="Abóbora com molho de tomate e amêndoa" page="40" calories="211 Kcal" portions="4 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="50 g">queijo da ilha</ingredient>
+	  <ingredient portion="30 g">azeite</ingredient>
+	  <ingredient portion="80 g">cebola</ingredient>
+	  <ingredient portion="1 dente">alho</ingredient>
+	  <ingredient portion="1 talo">aipo</ingredient>
+	  <ingredient portion="200 g" note="em pedaços">tomate</ingredient>
+	  <ingredient portion="50 g">polpa de tomate</ingredient>
+	  <ingredient portion="100 g" note="cortados em quartos">cogumelo</ingredient>
+	  <ingredient portion="1/2 c. chá">açúcar mascavo</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="1 pitada">pimenta moída</ingredient>
+	  <ingredient portion="800 g" note="cortada em cubos">abóbora</ingredient>
+	  <ingredient portion="30 g">amêndoa laminada</ingredient>
+	  <ingredient portion="10 folhas">manjericão</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Lasanha de curgete e pimentos" page="41" calories="565 Kcal" portions="12 Doses" prep_time="4 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ o recheio" portion="65 g">queijo parmesão</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="50 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="150 g" note=",só a parte branca">alho francês</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="150 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="150 g" note="descascada cortada em cubos">beringela</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="100 g" note="cortado em cubos">pimento amarelo</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="200 g" note="cortada em cubos">courgette</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="10 folhas">manjericão</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="250 g">queijo ricota</ingredient>
+	  <ingredient part="Ingredientes p/ o creme de pimentos" portion="20 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o creme de pimentos" portion="150 g">pimento vermelho</ingredient>
+	  <ingredient part="Ingredientes p/ o creme de pimentos" portion="50 g" note=",só a parte branca">alho francês</ingredient>
+	  <ingredient part="Ingredientes p/ o creme de pimentos" portion="40 g">vinho branco</ingredient>
+	  <ingredient part="Ingredientes p/ o creme de pimentos" portion="1 c. chá" note="(ou 1 cubo)">caldo de legumes</ingredient>
+	  <ingredient part="Ingredientes p/ o molho pesto" portion="15 g">amêndoa pelada</ingredient>
+	  <ingredient part="Ingredientes p/ o molho pesto" portion="1 dente">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o molho pesto" portion="40 g folhas">manjericão</ingredient>
+	  <ingredient part="Ingredientes p/ o molho pesto" portion="75 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o molho pesto" portion="1 pitada">sal</ingredient>
+	  <ingredient part="Ingredientes p/ a montagem" portion="250 g" note="fresca">placas de lasanha</ingredient>
+	  <ingredient part="Ingredientes p/ a montagem" portion="100 g">natas</ingredient>	  
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Penne com legumes no forno" page="29" calories="545 Kcal" portions="6 Doses" prep_time="33 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="70 g">queijo da ilha</ingredient>
+	  <ingredient portion="1500 g">água</ingredient>
+	  <ingredient portion="2 c. chá">sal</ingredient>
+	  <ingredient portion="500 g" note="tipo penne">massa</ingredient>
+	  <ingredient portion="25 g" note="mais q.b. p/ envolver e untar">azeite</ingredient>
+	  <ingredient portion="1 dente">alho</ingredient>
+	  <ingredient portion="100 g" note="cortadas em pedaços">acelgas</ingredient>
+	  <ingredient portion="200 g" note="cortada às rodelas">courgette</ingredient>
+	  <ingredient portion="25 folhas" note="mais q.b. p/ decorar">manjericão</ingredient>
+	  <ingredient portion="1 pitada">pimenta</ingredient>
+	  <ingredient portion="500 g">leite</ingredient>
+	  <ingredient portion="25 g">farinha</ingredient>
+	  <ingredient portion="25 g">manteiga</ingredient>
+	  <ingredient portion="80 g">queijo mascarpone</ingredient>
+	  <ingredient portion="250 g" note="cortado em metades ou 4 tomates chucha cortados às rodelas">tomate cereja</ingredient>	  
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Rolo de massa fresca com ricota, espinafres e abóbora" page="26" calories="381 Kcal" portions="6 Unid. aprox." prep_time="4 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ o rolo" portion="50 g">queijo parmesão</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="200 g">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="2">ovo</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="500 g" note="cortada em pedaços">abóbora</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="1/2">malagueta</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="1 1/2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="25 g" note= ",mais q.b. p/ regar">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="2 dentes">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="350 g" note="descongelados, bem espremidos">espinafre</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="2 c. sopa">orégãos</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="20 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="1 pitada">noz-moscada</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="150 g" note="esfarelado">queijo ricota</ingredient>
+	  <ingredient part="Ingredientes p/ o rolo" portion="500 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ o molho" portion="20 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ o molho" portion="20 folhas">manjericão</ingredient>
+	  <ingredient part="Ingredientes p/ o molho" portion="20 g">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ o molho" portion="350 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ o molho" portion="1/2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o molho" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o molho" portion="1 pitada">noz-moscada</ingredient>	   
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+   </recipes>
+  </category>
+
+  <category name="Peixe e marisco">
+   <recipes>
+    <recipe name="Bacalhau com molho de tomate e batatas" page="24" calories="999 Kcal" portions="6 Doses" prep_time="57 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ a maionese sem ovo" portion="150 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ a maionese sem ovo" portion="150 g">óleo</ingredient>
+	  <ingredient part="Ingredientes p/ a maionese sem ovo" portion="150 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ a maionese sem ovo" portion="1 dente" note="(opcional)">alho</ingredient>
+	  <ingredient part="Ingredientes p/ a maionese sem ovo" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ a maionese sem ovo" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ a maionese sem ovo" portion="40 g">limão</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="100 g">cebola</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="2 dentes">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="100 g" note=",mais q.b. p/ untar">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="800 g" note="em pedaços">tomate</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="1 c. chá">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="1400 g" note="demolhado (aprox. 6 postas)">bacalhau</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="100 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="600 g" note="cortada às rodelas">batata</ingredient>
+	  <ingredient part="Ingredientes p/ o bacalhau" portion="100 g" note="cortado em tiras">pimento verde</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Caril de lulas com abóbora" page="32" calories="168 Kcal" portions="6 Doses" prep_time="22 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="1 1/2 c. sopa">pasta de caril</ingredient>
+	  <ingredient portion="200 g">leite de coco</ingredient>
+	  <ingredient portion="Raspa de 1">lima</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="1 c. sopa">açúcar mascavo</ingredient>
+	  <ingredient portion="1" note="s/ sementes cortada às rodelas">malagueta vermelha</ingredient>
+	  <ingredient portion="1" note="s/ sementes cortada às rodelas">malagueta verde</ingredient>
+	  <ingredient portion="100 g" note="cortada em lâminas">cebola</ingredient>
+	  <ingredient portion="2 c. sopa">polpa de tomate</ingredient>
+	  <ingredient portion="1000 g" note="limpas cortadas em argolas">lulas</ingredient>
+	  <ingredient portion="250 g" note="cortada em cubos pequenos">abóbora</ingredient>
+	  <ingredient portion="15 g">amido de milho</ingredient>
+	  <ingredient portion="100 g">espinafre baby</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Crepes de pescada" page="25" calories="256 Kcal" portions="14 Aprox. unid." prep_time="44 Min" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient part="Ingredientes p/ os crepes" portion="5 folhas">hortelã</ingredient>
+	  <ingredient part="Ingredientes p/ os crepes" portion="5 folhas">manjericão</ingredient>
+	  <ingredient part="Ingredientes p/ os crepes" portion="1 c. chá">folhas de tomilho</ingredient>
+	  <ingredient part="Ingredientes p/ os crepes" portion="45 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ os crepes" portion="200 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ os crepes" portion="1/2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ os crepes" portion="1">ovo</ingredient>
+	  <ingredient part="Ingredientes p/ os crepes" portion="70 g">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ os crepes" portion="q.b." note="p/ untar">óleo</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="20 g" note=",só as folhas">salsa</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1000 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="50 g" note=",mais q.b. p/ untar">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 1/2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="400 g">lombos de pescada</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="100 g">cebola</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="2 dentes">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="300 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="20 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="60 g">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 pitada">noz-moscada</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1 c. chá">mostarda</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="10 g">limão</ingredient>
+	  <ingredient part="Ingredientes p/ o molho verde" portion="20 g">salsa</ingredient>
+	  <ingredient part="Ingredientes p/ o molho verde" portion="40 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ o molho verde" portion="40 g">chalota</ingredient>
+	  <ingredient part="Ingredientes p/ o molho verde" portion="100 g">espinafre baby</ingredient>
+	  <ingredient part="Ingredientes p/ o molho verde" portion="2 gemas">ovo</ingredient>
+	  <ingredient part="Ingredientes p/ o molho verde" portion="100 g">natas</ingredient>
+	  <ingredient part="Ingredientes p/ o molho verde" portion="1/2 c. chá">sal</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Douradas com açorda de coentros" page="24" calories="758 Kcal" portions="6 Doses" prep_time="35 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="6" note="pequenas (aprox. 250 g cada)">dourada</ingredient>
+	  <ingredient portion="2 c. chá">sal</ingredient>
+	  <ingredient portion="4 dentes">alho</ingredient>
+	  <ingredient portion="10 g" note=",só as folhas mais q.b. p/ guarnecer">coentro</ingredient>
+	  <ingredient portion="50 g">azeite</ingredient>
+	  <ingredient portion="1200 g">água</ingredient>
+	  <ingredient portion="500 g" note="cortado em fatias finas">pão alentejano</ingredient>
+	  <ingredient portion="2 gemas">ovo</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Esparguete com alho-francês e camarão" page="28" calories="447 Kcal" portions="6 Doses" prep_time="40 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="50 g">queijo parmesão</ingredient>
+	  <ingredient portion="1500 g">água</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="350 g">esparguete</ingredient>
+	  <ingredient portion="50 g">pão duro</ingredient>
+	  <ingredient portion="5 pés">salsa</ingredient>
+	  <ingredient portion="60 g" note=",mais q.b. p/ envolver">azeite</ingredient>
+	  <ingredient portion="2 dentes">alho</ingredient>
+	  <ingredient portion="15 g">coentro</ingredient>
+	  <ingredient portion="400 g" note="cortado em pedaços, só a parte branca">alho francês</ingredient>
+	  <ingredient portion="50 g">vinho branco</ingredient>
+	  <ingredient portion="300 g" note="cortado em pedaços">miolo de camarão</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Esparguete preto com frutos secos, anchovas e molho de tomate" page="28" calories="567 Kcal" portions="6 Doses" prep_time="32 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="20 g">brôa de milho</ingredient>
+	  <ingredient portion="50 g" note="mais q.b. p/ envolver">azeite</ingredient>
+	  <ingredient portion="1500 g">água</ingredient>
+      <ingredient portion="1 c. chá">sal</ingredient>
+      <ingredient portion="500 g">esparguete preto</ingredient>	
+      <ingredient portion="2 dentes">alho</ingredient>
+      <ingredient portion="100 g">caju</ingredient>
+      <ingredient portion="50 g">passas de uva</ingredient>
+      <ingredient portion="40 g" note="de conserva">filetes de anchova</ingredient>
+	  <ingredient portion="150 g">vinho tinto</ingredient>
+	  <ingredient portion="100 g">polpa de tomate</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Lombos de pescada com espinafres e molho de tomate à portuguesa" page="46" calories="269 Kcal" portions="6 Doses" prep_time="41 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="500 g" note="(de casca vermelha p/ fritar), cortada em cubos pequenos">batata</ingredient>
+	  <ingredient portion="q.b.">sal</ingredient>
+	  <ingredient portion="600 g">lombos de pescada</ingredient>
+	  <ingredient portion="1">limão</ingredient>
+	  <ingredient portion="q.b.">pimenta</ingredient>
+	  <ingredient portion="120 g">cebola</ingredient>
+	  <ingredient portion="2 dentes">alho</ingredient>
+	  <ingredient portion="50 g">azeite</ingredient>
+	  <ingredient portion="200 g" note="cortado em pedaços">tomate</ingredient>
+	  <ingredient portion="1 folha">louro</ingredient>
+	  <ingredient portion="20 g">vinho branco</ingredient>
+	  <ingredient portion="250 g">água</ingredient>
+	  <ingredient portion="1 c. chá">açúcar</ingredient>
+	  <ingredient portion="500 g" note="descongelados bem espremidos">espinafre</ingredient>
+	  <ingredient portion="1 pitada">noz-moscada</ingredient>
+	  <ingredient portion="Folhas q.b." note="p/ guarnecer">coentro</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Pataniscas de salmão e curgete" page="38" calories="265 Kcal" portions="12 Unid. aprox." prep_time="3 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="350 g" note="cortada em pedaços">courgette</ingredient>
+	  <ingredient portion="50 g">manteiga</ingredient>
+	  <ingredient portion="70 g">leite</ingredient>
+	  <ingredient portion="2">ovo</ingredient>
+	  <ingredient portion="190 g">farinha</ingredient>
+	  <ingredient portion="100 g" note="cortado em tiras">salmão fumado</ingredient>
+	  <ingredient portion="1 c. sopa" note="fresco ou salsa">aneto</ingredient>
+	  <ingredient portion="1/2 c. chá">sal</ingredient>
+	  <ingredient portion="1 pitada">pimenta</ingredient>
+	  <ingredient portion="q.b." note="p/ fritar">azeite</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Terrina de portobello e espargos verdes com tártaro de camarão e guacamole" page="49" calories="476 Kcal" portions="1 Dose" prep_time="10 Min" difficult_level="DIFÍCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ a terrina de portobello" portion="1" note="grande">cogumelo</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="q.b.">sal</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="q.b.">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="20 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="80 g" note="verdes descascados">espargos</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="50 g" note="cortadas em lâminas finas">cenoura</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="1" note="grande (20/30) c/ casca">camarão</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="500 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="q.b.">coentro</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="q.b.">gengibre em pó</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="50 g">queijo creme</ingredient>
+	  <ingredient part="Ingredientes p/ a terrina de portobello" portion="5 g" note="picado">cebolinho</ingredient>
+	  <ingredient part="Ingredientes p/ o tártaro de camarão" portion="20 g">funcho</ingredient>
+	  <ingredient part="Ingredientes p/ o tártaro de camarão" portion="20 g" note="picada">cebola roxa</ingredient>
+	  <ingredient part="Ingredientes p/ o tártaro de camarão" portion="q.b." note="picada">salsa</ingredient>
+	  <ingredient part="Ingredientes p/ o tártaro de camarão" portion="5 g ovas" >peixe-voador</ingredient>
+	  <ingredient part="Ingredientes p/ o tártaro de camarão" portion="1/2">limão</ingredient>
+	  <ingredient part="Ingredientes p/ o tártaro de camarão" portion="q.b.">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o tártaro de camarão" portion="q.b.">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o guacamole" portion="2 pés" note=",só as folhas">coentro</ingredient>
+	  <ingredient part="Ingredientes p/ o guacamole" portion="20 g">cebola roxa</ingredient>
+	  <ingredient part="Ingredientes p/ o guacamole" portion="80 g">abacate</ingredient>
+	  <ingredient part="Ingredientes p/ o guacamole" portion="10 g sumo">lima</ingredient>
+	  <ingredient part="Ingredientes p/ o guacamole" portion="20 g" note="maduro cortado em cubos">tomate</ingredient>
+	  <ingredient part="Ingredientes p/ o guacamole" portion="q.b.">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o guacamole" portion="q.b.">pimenta</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+   </recipes>
+  </category>
+
+  <category name="Carnes e aves">
+   <recipes>
+    <recipe name="Arroz com cogumelos, nabiças e linguiça" page="37" calories="394 Kcal" portions="4 Doses" prep_time="30 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+	  <ingredient portion="1 dente">alho</ingredient>
+	  <ingredient portion="100 g">cebola</ingredient>
+	  <ingredient portion="40 g">talos de aipo</ingredient>
+	  <ingredient portion="200 g">cogumelos laminados</ingredient>
+	  <ingredient portion="150 g" note="cortada às rodelas">linguiça</ingredient>
+	  <ingredient portion="100 g" note="cortadas em pedaços">nabiças</ingredient>
+	  <ingredient portion="1000 g">água</ingredient>
+	  <ingredient portion="1 c. chá" note="(ou 1 cubo)">caldo de legumes</ingredient>
+	  <ingredient portion="1 pitada">sal</ingredient>
+	  <ingredient portion="1 pitada">pimenta</ingredient>
+	  <ingredient portion="250 g">arroz agulha</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Embrulhos de couve com arroz de tomate" page="36" calories="486 Kcal" portions="4 Doses" prep_time="41 Min" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient part="Ingredientes p/ os embrulhos" portion="1500 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="12 folhas">couve lombarda</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="80 g sobras">pão</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="150 g" note="cortado em pedaços">presunto</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="30 g" note="cortado em pedaços">bacon</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="120 g">cebola</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="1 dente">alho</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="1 c. chá" note="(ou 1 cubo)">caldo de legumes</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="150 g">carne de vaca picada</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="100 g">carne de porco picada</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="2 gemas">ovo</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="25 g">vinho branco</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="10 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ os embrulhos" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o arroz de tomate" portion="100 g">cebola</ingredient>
+	  <ingredient part="Ingredientes p/ o arroz de tomate" portion="1 dente">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o arroz de tomate" portion="30 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o arroz de tomate" portion="400 g" note="em pedaços">tomate</ingredient>
+	  <ingredient part="Ingredientes p/ o arroz de tomate" portion="30 g">vinho branco</ingredient>
+	  <ingredient part="Ingredientes p/ o arroz de tomate" portion="600 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ o arroz de tomate" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o arroz de tomate" portion="350 g">arroz agulha</ingredient>	  
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Folhados de frango" page="39" calories="368 Kcal" portions="12 Unid. aprox." prep_time="16 Min" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient portion="30 g">azeite</ingredient>
+	  <ingredient portion="3 dentes">alho</ingredient>
+	  <ingredient portion="120 g">cebola</ingredient>
+	  <ingredient portion="600 g" note="cortado em tiras">peito de frango</ingredient>
+	  <ingredient portion="300 g" note="frescos">cogumelos laminados</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="1 pitada">pimenta</ingredient>
+	  <ingredient portion="60 g">vinho branco</ingredient>
+	  <ingredient portion="1 c. chá" note="(ou 1 cubo)">caldo de legumes</ingredient>
+	  <ingredient portion="25 g">farinha</ingredient>
+	  <ingredient portion="200 g">natas</ingredient>
+	  <ingredient portion="500 g">massa folhada</ingredient>
+	  <ingredient portion="1 gema" note="p/ pincela">ovo</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Frango com molho de mostarda, couve lombarda e batatinhas no forno" page="31" calories="832 Kcal" portions="4 Doses" prep_time="24 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ as batatinhas" portion="800 g" note="novas c/ casca p/ assar, cortadas ao meio">batata</ingredient>
+	  <ingredient part="Ingredientes p/ as batatinhas" portion="q.b." note="p/ regar">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ as batatinhas" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ as batatinhas" portion="1 c. chá" note="só as folhas">alecrim</ingredient>
+	  <ingredient part="Ingredientes p/ as batatinhas" portion="6 fatias">bacon</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="3 dentes">alho</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="30 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="300 g" note="cortada em tiras com cerca de 1,5 cm de largura">couve lombarda</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="100 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="3 dentes">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="30 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="100 g" note="cortado em cubos">bacon</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="500 g" note="cortado em cubos">peito de frango</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="1/2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="30 g">vinho da madeira</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="1 1/2 c. sopa">mostarda</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="1/2">limão</ingredient>
+	  <ingredient part="Ingredientes p/ o frango" portion="200 g">natas</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Fusilli com bolonhesa de salsinhas" page="30" calories="688 Kcal" portions="6 Doses" prep_time="36 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="50 g">queijo parmesão</ingredient>
+	  <ingredient portion="1500 g">água</ingredient>
+	  <ingredient portion="2 c. chá">sal</ingredient>
+	  <ingredient portion="500 g" note="tipo fusilli">massa</ingredient>
+	  <ingredient portion="30 g" note=",mais q.b. p/ envolver">azeite</ingredient>
+	  <ingredient portion="150 g">cebola</ingredient>
+	  <ingredient portion="4 dentes">alho</ingredient>
+	  <ingredient portion="130 g">cenoura</ingredient>
+	  <ingredient portion="100 g">talos de aipo</ingredient>
+	  <ingredient portion="1" note="seca (opcional)">malagueta</ingredient>
+	  <ingredient portion="600 g" note="frescas s/ pele">salsicha</ingredient>
+	  <ingredient portion="30 g" note="(opcional)">vinagre balsâmico</ingredient>
+	  <ingredient portion="400 g" note="em pedaços">tomate</ingredient>
+	  <ingredient portion="1 c. sopa">orégãos</ingredient>
+	  <ingredient portion="1 pitada">pimenta</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Peito de pato com couve salteada" page="33" calories="424 Kcal" portions="4 Doses" prep_time="9 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ o pato" portion="4" note="c/ pele">peito de pato</ingredient>
+	  <ingredient part="Ingredientes p/ o pato" portion="1 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o pato" portion="Sumo de 2">laranja</ingredient>
+	  <ingredient part="Ingredientes p/ o pato" portion="2 dentes">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o pato" portion="20 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o pato" portion="1 c. sopa">alecrim</ingredient>
+	  <ingredient part="Ingredientes p/ o pato" portion="Raspa de 1/2">laranja</ingredient>
+	  <ingredient part="Ingredientes p/ o pato" portion="500 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="3 dentes">alho</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="20 g">coentro</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="35 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="300 g" note="cortada em pedaços">couve coração</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="1" note="s/ sementes (opcional)">malagueta vermelha</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="20 g">vinho branco</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="20 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="1/2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="1/2 c. chá">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="15 g">molho de soja</ingredient>
+	  <ingredient part="Ingredientes p/ a couve" portion="1/2 c. chá" note="(opcional)">cominhos em pó</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Peitos de codorniz com uvas" page="32" calories="403 Kcal" portions="4 Doses" prep_time="15 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="400 g">peito de codorniz</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="6 grãos" note="da jamaica ou preta">pimenta</ingredient>
+	  <ingredient portion="1 c. sopa">molho de soja</ingredient>
+	  <ingredient portion="1 c. sopa">limão</ingredient>
+	  <ingredient portion="100 g" note="cortada em quartos">chalota</ingredient>
+	  <ingredient portion="30 g">azeite</ingredient>
+	  <ingredient portion="200 g" note="cortadas ao meio">uva</ingredient>
+	  <ingredient portion="1 c. sopa">tomilho</ingredient>
+	  <ingredient portion="200 g">creme fraîche</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Risoto de legumes com crumble de bacon" page="14" calories="596 Kcal" portions="4 Doses" prep_time="88 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ ralar" portion="20 g">queijo parmesão</ingredient>
+	  <ingredient part="Ingredientes p/ ralar" portion="100 g">bacon</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="1000 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="50 g">vinho branco</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="50 g" note=", cortado em pedaços">alho francês</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="50 g" note=", cortado em pedaços">talos de aipo</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="50 g" note=", cortada em pedaços">cebola</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="1 dente">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="50 g" note=", cortada em pedaços">cenoura</ingredient>
+	  <ingredient part="Ingredientes p/ o caldo de legumes" portion="10 g" note="(coentro, salsa, salva, louro, alecrim)">ramo de cheiros</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="90 g">cebola</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="1 dente">alho</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="80 g">alho francês</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="30 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="60 g">cenoura</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="200 g">courgette</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="100 g" note="frescos, cortados em quartos">cogumelo</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="20 g">vinho branco</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="300 g" note="p/ risoto">arroz</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="1 pitada">pimenta</ingredient>
+	  <ingredient part="Ingredientes p/ o risoto" portion="20 g">manteiga</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Salsichas frescas com batata" page="38" calories="312 Kcal" portions="4 Doses" prep_time="25 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="1500 g">água</ingredient>
+	  <ingredient portion="500 g" note="(de casca vermelha p/ fritar), cortada em cubos pequenos">batata</ingredient>
+	  <ingredient portion="250 g" note="frescas, cortadas em pedaços pequenos">salsicha</ingredient>
+	  <ingredient portion="1 dente">alho</ingredient>
+	  <ingredient portion="10 g">mostarda de dijon</ingredient>
+	  <ingredient portion="20 g">vinagre de vinho branco</ingredient>
+	  <ingredient portion="30 g">azeite</ingredient>
+	  <ingredient portion="1 c. sopa" note="em pedaços pequenos, mais q.b. p/ guarnecer">cebolinho</ingredient>
+	  <ingredient portion="1 pitada">pimenta</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Pernil com batatas e maçã" page="16" calories="776 Kcal" portions="6 Doses" prep_time="65 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ o pernil" portion="1 pernil" note="(aprox. 1200 g)">porco fumado</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="1200 g" note=",mais q.b. p/ cobrir o pernil">água</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="300 g osso" note="ou suã">espinhaço</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="1 c. chá">mistura de pimentas</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="1 c. chá de grãos de">pimenta da jamaica</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="2 vagens">cardamomo</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="100 g">cenoura</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="50 g">aipo</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="100 g">alho francês</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="1 folha">louro</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="40 g">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="15 g folhas" note=",mais q.b. p/ polvilhar">coentro</ingredient>
+	  <ingredient part="Ingredientes p/ o pernil" portion="1 c. chá">limão</ingredient>
+	  <ingredient part="Ingredientes p/ as batatas e maçã" portion="1200 g" note="novas, cortadas em gomos">batata</ingredient>
+	  <ingredient part="Ingredientes p/ as batatas e maçã" portion="35 g">azeite</ingredient>
+	  <ingredient part="Ingredientes p/ as batatas e maçã" portion="2 pés">alecrim</ingredient>
+	  <ingredient part="Ingredientes p/ as batatas e maçã" portion="1 1/2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ as batatas e maçã" portion="400 g" note=",cortada em gomos">maçã</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+   </recipes>
+  </category>
+
+  <category name="Lanche">
+   <recipes>
+    <recipe name="Bolo de amêndoa e abóbora cristalizada" page="33" calories="326 Kcal" portions="12 Doses" prep_time="5 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="250 g" note="s/ pele">amêndoa</ingredient>
+	  <ingredient portion="250 g" note="cristalizada cortada em pedaços">abóbora</ingredient>
+	  <ingredient portion="200 g">açúcar</ingredient>
+	  <ingredient portion="4">ovo</ingredient>
+	  <ingredient portion="30 g" note="à temperatura ambiente,mais q.b. p/ untar">manteiga</ingredient>
+	  <ingredient portion="1 c. sopa" note="tipo 55, mais q.b. p/ polvilhar">farinha</ingredient>
+	  <ingredient portion="1 c. chá">fermento em pó p/ bolos</ingredient>
+	  <ingredient portion="q.b." note="p/ polvilhar">açúcar em pó</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Bom-bocado" page="45" calories="404 Kcal" portions="10 Doses" prep_time="12 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ a massa" portion="100 g">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="Casca de 1/2" note=",só a parte amarela">limão</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="300 g" note="tipo 55, mais q.b. p/ polvilhar">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="60 g">óleo</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="2 gemas">ovo</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="60 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="1 pitada">sal</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="120 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="200 g">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1/4 vagem">baunilha</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="2 c. sopa">amido de milho</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="250 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="4 gemas">ovo</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="1">ovo</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Broa de centeio" page="22" calories="310 Kcal" portions="600 g Aprox." prep_time="8 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ a massa lêveda" portion="120 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ a massa lêveda" portion="15 g">fermento padeiro fresco</ingredient>
+	  <ingredient part="Ingredientes p/ a massa lêveda" portion="80 g" note="tipo 65">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ a massa lêveda" portion="1 c. chá">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ a broa" portion="470 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ a broa" portion="2 c. chá">sal</ingredient>
+	  <ingredient part="Ingredientes p/ a broa" portion="200 g" note="branco">farinha de milho</ingredient>
+	  <ingredient part="Ingredientes p/ a broa" portion="120 g">farinha de centeio</ingredient>
+	  <ingredient part="Ingredientes p/ a broa" portion="110 g" note="tipo 65, mais q.b. p/ povilhar">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ a broa" portion="20 g">fermento padeiro fresco</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Múmias de maçã" page="19" calories="188 Kcal" portions="24 Unid. aprox." prep_time="25 Seg" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient portion="100 g">miolo de noz</ingredient>
+	  <ingredient portion="450 g" note="tipo 65, mais q.b. p/ polvilhar">farinha de trigo</ingredient>
+	  <ingredient portion="50 g">açúcar mascavo</ingredient>
+	  <ingredient portion="1/2 c. chá">sal</ingredient>
+	  <ingredient portion="200 g">manteiga</ingredient>
+	  <ingredient portion="100 g">água</ingredient>
+	  <ingredient portion="60 g" note=",mais q.b. p/ polvilhar">açúcar</ingredient>
+	  <ingredient portion="1/2 c. chá" note=",mais q.b. p/ polvilhar">canela</ingredient>
+	  <ingredient portion="3" note="granny smith s/ caroços, cortadas em 8 gomos">maçã</ingredient>
+	  <ingredient portion="q.b." note="ou passas de uva cortados em metades">arandos</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Ossos com chocolate" page="18" calories="144 Kcal" portions="20 Unid. aprox." prep_time="6 Min" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient part="Ingredientes p/ o molho de chocolate" portion="50 g">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ o molho de chocolate" portion="50 g">chocolate p/ culinária</ingredient>
+	  <ingredient part="Ingredientes p/ o molho de chocolate" portion="50 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ o molho de chocolate" portion="70 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="200 g">leite</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="50 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="30 g">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="20 g">mel</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="20 g">fermento padeiro fresco</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="400 g" note="tipo 65, mais q.b. p/ polvilhar">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="1 c. chá">sal</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Pão com chocolate" page="42" calories="429 Kcal" portions="6 Unid. aprox." prep_time="7 Min" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient part="Ingredientes p/ o recheio" portion="200 g">chocolate p/ culinária</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="100 g">leite condensado</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="150 g" note=",mais q.b. p/ pincelar">leite</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="30 g">manteiga</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="20 g">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="15 g">fermento padeiro fresco</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="250 g" note="tipo 65, mais q.b. p/ polvilhar">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="10 g">leite em pó</ingredient>
+	  <ingredient part="Ingredientes p/ a massa" portion="1 c. chá">sal</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Pão de batata" page="22" calories="241 Kcal" portions="10 Unid. aprox." prep_time="22 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="1200 g">água</ingredient>
+	  <ingredient portion="250 g" note="descascada,cortada em pedaços">batata</ingredient>
+	  <ingredient portion="50 g">óleo</ingredient>
+	  <ingredient portion="25 g">fermento padeiro fresco</ingredient>
+	  <ingredient portion="300 g" note="tipo 65, mais q.b. p/ povilhar">farinha</ingredient>
+	  <ingredient portion="50 g">farelo de trigo</ingredient>
+	  <ingredient portion="20 g">açúcar</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="100 g">sementes de girassol</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Pão muesli" page="23" calories="376 Kcal" portions="600 g Aprox." prep_time="1 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="400 g">água</ingredient>
+	  <ingredient portion="20 g">fermento padeiro fresco</ingredient>
+	  <ingredient portion="10 g">mel</ingredient>
+	  <ingredient portion="350 g" note="tipo 65, mais q.b. p/ povilhar">farinha</ingredient>
+	  <ingredient portion="150 g">farinha de trigo integral</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="q.b." note="p/ untar">manteiga</ingredient>
+	  <ingredient portion="2 c. sopa">sementes de girassol</ingredient>
+	  <ingredient portion="1 c. sopa" note="pretas">sementes de sésamo</ingredient>
+	  <ingredient portion="1 c. sopa">flocos de aveia</ingredient>
+	  <ingredient portion="q.b.">água</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Pombinhas" page="20" calories="205 Kcal" portions="14 Unid. aprox." prep_time="4 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="380 g" note=",mais q.b. p/ pincelar">leite</ingredient>
+	  <ingredient portion="50 g">manteiga</ingredient>
+	  <ingredient portion="25 g">fermento padeiro fresco</ingredient>
+	  <ingredient portion="650 g" note="tipo 65, mais q.b. p/ povilhar">farinha</ingredient>
+	  <ingredient portion="1 c. chá">sal</ingredient>
+	  <ingredient portion="2">ovo</ingredient>
+	  <ingredient portion="1 gema" note="p/ pincelar">ovo</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Tarteletes de leite condensado com framboesas" page="42" calories="562 Kcal" portions="6 Unidades" prep_time="35 Seg" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="250 g">bolacha maria</ingredient>
+	  <ingredient portion="130 g" note="à temperatura ambiente">manteiga</ingredient>
+	  <ingredient portion="350 g">leite condensado</ingredient>
+	  <ingredient portion="100 g">iogurte grego natural</ingredient>
+	  <ingredient portion="200 g">framboesa</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+   </recipes>
+  </category>
+
+  <category name="Sobremesas">
+   <recipes>
+    <recipe name="Mousse saycheese com sorriso de chocolate" page="44" calories="548 Kcal" portions="8 Doses" prep_time="19 Min" difficult_level="MÉDIA">
+     <ingredients>
+      <ingredient part="Ingredientes p/ a mousse" portion="3 folhas" note="cortada em pedaços">gelatina neutra</ingredient>
+	  <ingredient part="Ingredientes p/ a mousse" portion="q.b.">água</ingredient>
+	  <ingredient part="Ingredientes p/ a mousse" portion="400 g" note="c/ 35% de gordura bem frias">natas</ingredient>
+	  <ingredient part="Ingredientes p/ a mousse" portion="1 lata">doce de leite condensado</ingredient>
+	  <ingredient part="Ingredientes p/ a mousse" portion="200 g">queijo creme</ingredient>
+	  <ingredient part="Ingredientes p/ o sorriso" portion="100 g" note="partido em pedaços">chocolate p/ culinária</ingredient>
+	  <ingredient part="Ingredientes p/ o sorriso" portion="60 g">água</ingredient>
+	  <ingredient part="Ingredientes p/ o sorriso" portion="60 g">açúcar em pó</ingredient>
+	  <ingredient part="Ingredientes p/ o sorriso" portion="25 g" note="à temperatura ambiente">manteiga s/ sal</ingredient>
+	  <ingredient part="Ingredientes p/ o sorriso" portion="q.b." note="ou amêndoas picadas q.b. p/ servir">nozes</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Ravioli de cacau com recheio de framboesa e ganache de chocolate branco" page="11" calories="322 Kcal" portions="4 Doses" prep_time="7 Min" difficult_level="DIFÍCIL">
+     <ingredients>
+      <ingredient part="Ingredientes p/ a massa dos ravioli" portion="30 g">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ a massa dos ravioli" portion="1">ovo</ingredient>
+	  <ingredient part="Ingredientes p/ a massa dos ravioli" portion="110 g" note=",mais q.b. p/ polvilhar">farinha</ingredient>
+	  <ingredient part="Ingredientes p/ a massa dos ravioli" portion="20 g">cacau em pó</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="45 g">açúcar</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="50 g">queijo creme</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="45 g">iogurte natural</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="60 g" note="mais q.b. p/ servir">framboesa</ingredient>
+	  <ingredient part="Ingredientes p/ o recheio" portion="q.b.">água</ingredient>
+	  <ingredient part="Ingredientes p/ a ganache de chocolate branco" portion="50 g" note="c/35% de gordura">natas</ingredient>
+	  <ingredient part="Ingredientes p/ a ganache de chocolate branco" portion="1/2" note=",só as sementes">vagem de baunilha</ingredient>
+	  <ingredient part="Ingredientes p/ a ganache de chocolate branco" portion="20 g">chocolate branco</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+	<recipe name="Soufflés de chocolate e laranja" page="43" calories="544 Kcal" portions="6 Doses" prep_time="7 Min" difficult_level="FÁCIL">
+     <ingredients>
+      <ingredient portion="170 g" note="partido em pedaços">chocolate p/ culinária</ingredient>
+	  <ingredient portion="200 g" note=",mais q.b. p/ polvilhar">açúcar</ingredient>
+	  <ingredient portion="Casca de 1" note=",só a parte laranja">laranja</ingredient>
+	  <ingredient portion="4">ovo</ingredient>
+	  <ingredient portion="140 g" note=",mais q.b. p/ untar">manteiga</ingredient>
+	  <ingredient portion="10 g">licor de laranja</ingredient>
+	  <ingredient portion="1 pitada">sal</ingredient>
+	  <ingredient portion="q.b." note="p/ servir">açúcar em pó</ingredient>
+     </ingredients>
+     <description>.</description>
+    </recipe>
+	
+   </recipes>
+  </category>
+
+  </categories>
+</source>
+</sources>

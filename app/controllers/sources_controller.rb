@@ -1,6 +1,6 @@
 class SourcesController < ApplicationController
   before_filter :exist, only: [:show,:edit,:destroy]
-  #before_filter :is_public, only: [:show]
+  before_filter :is_public, only: [:show]
   before_filter :signed_in_user, only: [:new,:create,:update,:edit,:detroy]
   before_filter :admin_user, only: [:new,:create,:destroy]
   before_filter :correct_user,   only: [:edit, :update]

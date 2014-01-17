@@ -1,4 +1,4 @@
-<li class="span9">
+<li>
     <div class="thumbnail">
         <table class="" border="0">
         <tr>
@@ -23,10 +23,12 @@
 
         <tr>
             <td class="span5">
+            <% if recipe.source.public?%>
                 <small><%= recipe.pax if recipe.pax %></small>
                 <i class="icon-bell"></i>
                 <strong><%= recipe.prep_time if recipe.prep_time %></strong>
-                <%= "<small>#{recipe.difficult_level}</small>".html_safe if recipe.difficult_level %>                
+                <%= "<small>#{recipe.difficult_level}</small>".html_safe if recipe.difficult_level %>
+            <%end%>            
             </td>
 
             <td colspan="2" class="span5">
@@ -41,7 +43,11 @@
         </tr>
         <tr>
             <td colspan="3" class="span10">
+            <% if recipe.source.public?%>
                 <small class=""><%=link_to recipe.source.name, recipe.source%></small>
+            <%else%>
+            	<small class=""><%=link_to t(:my_cookbook), recipe.source%></small>
+            <%end%>
                 <small><%= "#{t(:page)} #{recipe.page}" if recipe.page %></small>
             </td>
         </tr>

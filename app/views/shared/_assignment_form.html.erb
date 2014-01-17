@@ -6,13 +6,30 @@
 <% end %>
 <%= form_for(:assignment, url: assignments_path) do |i| %>
 	<div class="field">
-	    <%= i.text_field :name, :class => "span3", :data => {:provide => "typeahead", :items => "8", :source => @ingredients.to_json }, class: "span4" %>
+	    <%= i.text_field :name, "autocomplete"=>"off", class: "span4 mt", "data-provide"=>"typeahead"%>
 	    <%= i.submit t(:add), class: "btn btn-primary" %>
     	<%= link_to t(:clear), assignout_path, method: "delete", class: "btn btn-danger" if !home_page? %>
   	</div>
   	
 <% end %>
 
+<%= javascript_tag "var ingredients = #{ @ingredients.to_json };" %>
+<script>
+$('.mt').typeahead({
+	source: ingredients,
+	items: 5,
+	matcher: function(item) {
+		var q=this.query.latinize()
+		var i=item.latinise()
+		if (i.toLowerCase().indexOf(q.trim().toLowerCase()) == 0) {
+			return true
+		}
+    }
+})
+
+</script>
+
+<!--
 <script>
 //jQuery($(function () {
   $('.popover-test').popover({ 
@@ -26,3 +43,4 @@
 //});
 //  );
 </script>
+-->

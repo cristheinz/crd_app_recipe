@@ -13,7 +13,7 @@
 	
 <div class="row span10 offset1">
 	<p>
-		O Bimbify é uma ferramenta para pesquisa inteligente de receitas culinárias, inicialmente pensado para receitas da Bimby, não obstante, aberto para receber qualquer tipo de receitas através das parcerias.<!--
+		O Bimbify é uma ferramenta para pesquisa inteligente de receitas culinárias, inicialmente pensado para receitas da Bimby, não obstante, aberto para receber qualquer tipo de receitas através do registo.<!--
 		O Bimbify é uma ferramenta de pesquisa inteligente de receitas para a Bimby.--> A principal funcionalidade é a busca de receitas por ingredientes, porém também é possível pesquisar receitas por nome, categoria, livro ou revista.<!--Assim, para que encontre facilmente a receita que procura e, ainda outras alternativas, o Bimbyfy estará constantemente a sincronizar seus conteúdos com os últimos lançamentos de livros e revistas oficiais da Bimby.-->
 		O <i>site</i> adapta-se a qualquer ecrã, permitindo assim uma navegação simples e agradável, podendo ser utilizado como se tratasse de uma aplicação em um <i>tablet</i> ou <i>smartphone</i>.<br/>
 		No sentido de assegurar a proteção dos direitos de autor, o modo de preparação das receitas não<!--apenas os ingredientes das receitas--> são publicados e as imagens são fornecidas por buscas no Google.<!-- O utilizador poderá consultar em que livro ou revista a receita está publicada encontrando-a rapidamente com a informação da página em que está a receita.--> O utilizador poderá consultar em que livro ou revista a receita está publicada com a informação da página em que esta se encontra.<br/>
@@ -29,7 +29,7 @@
 </div>
 <div class="span10 offset1">
 	<p>
-		<%= link_to "Registar!", signup_path %> Os utilizadores registados têm acesso às seguintes funcionalidades:
+		Os utilizadores registados têm acesso às seguintes funcionalidades:
 	</p>
 	<ul>
 		<li>Seleccionar os livros e revistas que possui para filtrar as pesquisas;</li>
@@ -37,9 +37,27 @@
 		<li>Inserir modo de preparação das receitas;</li>
 		<li>Enviar ingredientes das receitas para lista de compras;</li>
 		<li>Gerir lista de compras.</li>
+		<li>Criar suas próprias receitas.</li>
 	</ul>
+	
+	<p>
+		Clique <%= link_to "aqui", signup_path %> para criar sua conta.
+		
+	</p>
 </div>
 
+<div class="row offset1">
+	<h2 class="pull-left"><em>Gostei! Posso ajudar?</em></h2>
+</div>
+<div class="span10 offset1">
+	<p>Sim! Poderá contribuir com doações para a manutenção do site.</p>
+	<p>A Equipa do Bimbyfy agradece.</p>
+	<%= render 'layouts/donate2' %>
+	
+</div>
+
+
+<!--
 <div class="row offset1">
 	<h2 class="pull-left"><em>Seja nosso parceiro!</em></h2>
 </div>
@@ -49,9 +67,11 @@
 		Se é editor de livros ou revistas culinárias, ou possui um blog com receitas originais e quer incluir as receitas no Bimbyfy poderá se tornar nosso parceiro. Envie-nos um <a href="mailto:admin@bimbyfy.com?Subject=Parceria" target="_top">email</a> para obter mais informações.
 	</p>
 </div>
-
+-->
+<!--
 <div class="row span11 offset1">
 </div>
+-->
 		<!--RETIRAR
 		<p>No futuro, em parceria com a Vorwerk, almejamos que a sincronização das receitas seja efectuada em simultâneo com o lançamento de novos livros e revistas oficias da Bimby. E, para os utilizadores registados, permitir a consulta integral da receita e disponibilizar funcionalidade inovadoras.</p>-->
 

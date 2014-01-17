@@ -24,6 +24,8 @@ en:
   destroy: "Delete"
   details: "Details"
   edit: "Edit"
+  edit_ingredients: "Edit ingredients"
+  edit_recipe: "Edit recipe"
   error_msg: "Error submitting form."
   expired_password_reset_msg: "Password reset has expired."
   favorites: "Favorites"
