@@ -1,5 +1,8 @@
 # Installation
 
+## Clone:
+    $ git clone https://github.com/cristheinz/crd_app_recipe.git
+
 ## Replace sensitive information in files:
 * /config/database.yml
 * /config/environments/production.rb
