@@ -1,25 +1,22 @@
-<h1>Listing ingredients</h1>
+<h1><%= t :ingredients %></h1>
 
-<table>
+<p><%= link_to t(:new_ingredient), new_ingredient_path, class: "btn btn-primary" %></p>
+
+<table class="table table-striped">
   <tr>
     <th>id</th>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><%= t :name %></th>
+    <th><%= t :options %></th>
   </tr>
 
 <% @ingredients.each do |ingredient| %>
   <tr>
     <td><%= ingredient.id %></td>
-    <td><%= ingredient.name %></td>
-    <td><%= link_to 'Show', ingredient %></td>
-    <td><%= link_to 'Edit', edit_ingredient_path(ingredient) %></td>
-    <td><%= link_to 'Destroy', ingredient, method: :delete, data: { confirm: t(:are_you_sure?) } %></td>
+    <td><%= link_to ingredient.name, ingredient %></td>
+    <td>
+    	<%= link_to t(:edit), edit_ingredient_path(ingredient) %> |
+    	<%= link_to t(:destroy), ingredient, method: :delete, data: { confirm: t(:are_you_sure?) } %>
+    </td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Ingredient', new_ingredient_path %>

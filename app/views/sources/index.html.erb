@@ -25,3 +25,16 @@
     	<%= render @sources %>
   	</ul>
 <% end %>
+
+<script>
+	$('.label-with-popover').tooltip({placement: 'bottom'});
+</script>
+
+<script>
+jQuery(function($){
+	$("input[type=submit]").hide();
+    $("input[type=checkbox]").click(function(){
+    	$(this).closest("form").submit();
+    });
+});
+</script>

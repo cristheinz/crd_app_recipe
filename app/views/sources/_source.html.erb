@@ -3,27 +3,17 @@
 		<%= form_for(current_user.usersbooks.build(source_id: source.id), remote: true) do |f| %>
             <label>
             	<%= f.check_box "task", {:checked=>source.is_usersbook(current_user.id)}, checked_value: source.id %>
-	       	  	<%=l source.publish_date, format: "%B %Y"%>
+	       	  	<span class="label-with-popover" data-toggle="tooltip" data-title="<%="#{source.name} - #{l source.publish_date, format: '%B %Y'}"%>">
+        			<%=source.name.truncate(30)%>
+        		</span>
             </label>
         	<%= f.hidden_field :source_id %>
             <%= f.submit %>
         <% end %>
     <%else%>
-        <%=l source.publish_date, format: "%B %Y"%>
+        <span class="label-with-popover" data-toggle="tooltip" data-title="<%="#{source.name} - #{l source.publish_date, format: '%B %Y'}"%>">
+        	<%=source.name.truncate(30)%>
+        </span>
 	<%end%>
-	<%= link_to image_tag(source.image.to_s, class: "thumbnail label-with-popover", "data-toggle"=>"tooltip", "data-title"=>source.name, size: "198x240"), source unless source.image.to_s.empty? %>
+	<%= link_to image_tag(source.image.to_s, class: "thumbnail", size: "198x240"), source unless source.image.to_s.empty? %>
 </li>
-
-
-<script>
-	$('.label-with-popover').tooltip({placement: 'bottom'});
-</script>
-
-<script>
-jQuery(function($){
-	$("input[type=submit]").hide();
-    $("input[type=checkbox]").click(function(){
-    	$(this).closest("form").submit();
-    });
-});
-</script>

@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @ingredient.name %>
-</p>
+  <%= image_tag(@link, :size => "320x320", class: "thumbnail") if@link.length>0 %>
+  <small>imagem fornecida por <%=image_tag('https://www.google.com/uds/css/small-logo.png')%></small>
+  <h3><%= @ingredient.name %></h3>
+  <p><%= @txt.html_safe %></p>
 
 
 <%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |

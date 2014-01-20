@@ -1,6 +1,7 @@
 class IngredientsController < ApplicationController
   before_filter :signed_in_user
   before_filter :admin_user#, only: [:index,:show,:edit,:update,:destroy]
+  #skip_before_filter :admin_user, only: :show
   # GET /ingredients
   # GET /ingredients.json
   def index
@@ -17,6 +18,15 @@ class IngredientsController < ApplicationController
   # GET /ingredients/1.json
   def show
     @ingredient = Ingredient.find(params[:id])
+    begin
+      image=Google::Search::Item::Image.new(:query => "#{@ingredient.name}").first
+      txt=Google::Search::Item::Web.new(:query => "#{@ingredient.name}").first
+      @link= image.uri
+      @txt= txt.to_s
+      rescue
+        @link=no_image_url
+        @txt= "<a href=\"http://pt.wikipedia.org/wiki/#{@ingredient.name}\" target=\"_blank\">wiki</a>"
+    end
 
     respond_to do |format|
       format.html # show.html.erb
