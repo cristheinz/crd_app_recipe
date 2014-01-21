@@ -1,12 +1,14 @@
 class IngredientsController < ApplicationController
   before_filter :signed_in_user
   before_filter :admin_user#, only: [:index,:show,:edit,:update,:destroy]
-  #skip_before_filter :admin_user, only: :show
+  skip_before_filter :signed_in_user, only: [:show, :index]
+  skip_before_filter :admin_user, only: [:show, :index]
   # GET /ingredients
   # GET /ingredients.json
   def index
     #@ingredients = Ingredient.all
-    @ingredients = Ingredient.order("name ASC")
+    #@ingredients = Ingredient.order("name ASC")
+    @ingredients = Ingredient.order("name ASC").where("name like ?", params[:initial] ? "#{params[:initial]}%" : "A%")
 
     respond_to do |format|
       format.html # index.html.erb

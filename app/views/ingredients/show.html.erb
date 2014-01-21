@@ -1,10 +1,12 @@
+<% provide(:title, @ingredient.name.capitalize) %>
 <p id="notice"><%= notice %></p>
 
-  <%= image_tag(@link, :size => "320x320", class: "thumbnail") if@link.length>0 %>
-  <small>imagem fornecida por <%=image_tag('https://www.google.com/uds/css/small-logo.png')%></small>
-  <h3><%= @ingredient.name %></h3>
-  <p><%= @txt.html_safe %></p>
+<%= image_tag(@link, :size => "320x320", class: "thumbnail") if@link.length>0 %>
+<small>imagem fornecida por <%=image_tag('https://www.google.com/uds/css/small-logo.png')%></small>
+<h3><%= @ingredient.name.capitalize %></h3>
 
 
-<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
-<%= link_to 'Back', ingredients_path %>
+<%= "#{link_to t(:edit), edit_ingredient_path(@ingredient)} |".html_safe if signed_in? && current_user.admin? %> 
+<%= link_to t(:ingredients), ingredients_path %>
+
+<p><%= @txt.html_safe %></p>
