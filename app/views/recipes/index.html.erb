@@ -1,4 +1,4 @@
-<% provide(:title, t(:recipes)) %>
+<% provide(:title, params[:search] ? "#{t(:search)} #{t(:recipes)}" : t(:recipes)) %>
   <div class="center">
     <h1><%= t(:recipes) %></h1>
     <!--<p><%= "#{@recipes.size} #{t(:recipes)}" if @recipes %></p>-->
