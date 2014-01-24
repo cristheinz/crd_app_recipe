@@ -1,6 +1,8 @@
 <% provide(:title, t(:slogan)) %>
 
 <% if !assigned_in? %>
+	<%= render 'layouts/news' if 1==2%>
+	
 	<div class="hero-unit center span8 offset1">
     	<h1>Bimby<span class="crd-fy">fy</span></h1>
     	<p class="hidden-phone"><i><%=t :slogan %></i></p>
@@ -9,7 +11,7 @@
     	<%= render 'shared/assignment_form' %>
     
     	<center>
-    		<%= render 'layouts/google_plus_1_btn' %>
+    		<div class="hidden-phone"><%= render 'layouts/google_plus_1_btn' %></div>
   			<%= render 'layouts/fb_like_btn' %>
   		</center>
   	</div>
