@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   before_filter :exist, only: [:show,:edit,:destroy]
-  before_filter :signed_in_user, only: [:index,:new,:create,:update,:edit,:detroy]
+  #before_filter :signed_in_user, only: [:index,:new,:create,:update,:edit,:detroy]
   before_filter :admin_user, only: [:index,:new,:create,:update,:edit,:destroy]
   # GET /categories
   # GET /categories.json
@@ -33,7 +33,8 @@ class CategoriesController < ApplicationController
     #    @recipes.push(recipe) if recipe.source.public?
     #  end
     #end
-    @num_recipes=@recipes.size+@partners_recipes.size
+    @num_recipes=@recipes.size
+    @num_recipes=@recipes.size+@partners_recipes.size if @partners_recipes
     @recipes=@recipes.paginate(page: params[:page], per_page: 10)
     
 
