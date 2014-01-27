@@ -54,7 +54,7 @@ namespace :xml do
     #args.with_defaults(element: "source")
     args.with_defaults(element: "ingredient")
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201310_revista_35.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201311_revista_36.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("#{args[:element]}").each do |node|
@@ -68,16 +68,58 @@ namespace :xml do
   end
 
   desc "List XML data" 
-  task :ingredientstoinsert => :environment do
+  task :newingredients => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201310_revista_35.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201311_revista_36.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("ingredient").each do |node|
-      children = node.children
       s=node.inner_text 
       ingredient=Ingredient.find_by_name(s.downcase)
       i_array.push(s) unless i_array.include?(s) || ingredient
+    end
+    puts i_array.sort
+    f.close
+  end
+
+  desc "List XML data" 
+  task :newcategories => :environment do
+    require 'nokogiri'
+    f = File.open("#{Rails.root}/lib/tasks/201311_revista_36.xml")
+    doc = Nokogiri::XML(f)
+    i_array = []
+    doc.css("category").each do |node|
+      s=node["name"] 
+      category=Category.find_by_name(s)
+      i_array.push(s) unless i_array.include?(s) || category
+    end
+    puts i_array.sort
+    f.close
+  end
+
+  desc "List XML data" 
+  task :timecheck => :environment do
+    require 'nokogiri'
+    f = File.open("#{Rails.root}/lib/tasks/201311_revista_36.xml")
+    doc = Nokogiri::XML(f)
+    i_array = []
+    doc.css("recipe").each do |node|
+      s=node["prep_time"] 
+      i_array.push(s) unless i_array.include?(s)
+    end
+    puts i_array.sort
+    f.close
+  end
+
+  desc "List XML data" 
+  task :lvlcheck => :environment do
+    require 'nokogiri'
+    f = File.open("#{Rails.root}/lib/tasks/201311_revista_36.xml")
+    doc = Nokogiri::XML(f)
+    i_array = []
+    doc.css("recipe").each do |node|
+      s=node["difficult_level"] 
+      i_array.push(s) unless i_array.include?(s)
     end
     puts i_array.sort
     f.close
@@ -122,7 +164,8 @@ namespace :xml do
     #f = File.open("#{Rails.root}/lib/tasks/massas_e_doces.xml")
     #f = File.open("#{Rails.root}/lib/tasks/201308_revista_33.xml")
     #f = File.open("#{Rails.root}/lib/tasks/201309_revista_34.xml")
-    f = File.open("#{Rails.root}/lib/tasks/201310_revista_35.xml")
+    #f = File.open("#{Rails.root}/lib/tasks/201310_revista_35.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201311_revista_36.xml")
     #f = File.open("#{Rails.root}/lib/tasks/paosaloio.xml")
     #f = File.open("#{Rails.root}/lib/tasks/receitas_utf8.xml")
     doc = Nokogiri::XML(f)

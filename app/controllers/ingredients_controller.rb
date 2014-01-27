@@ -21,13 +21,15 @@ class IngredientsController < ApplicationController
   def show
     @ingredient = Ingredient.find(params[:id])
     begin
-      image=Google::Search::Item::Image.new(:query => "#{@ingredient.name}").first
-      txt=Google::Search::Item::Web.new(:query => "#{@ingredient.name}").first
+      @txt= "<a href=\"http://pt.wikipedia.org/wiki/#{@ingredient.name}\" target=\"_blank\">wiki</a>"
+      
+      image=Google::Search::Image.new(:query => "#{@ingredient.name}").first
+      #txt=Google::Search::Item::Web.new(:query => "#{@ingredient.name}").first
       @link= image.uri
-      @txt= txt.to_s
+      #@txt= txt.to_s
       rescue
         @link=no_image_url
-        @txt= "<a href=\"http://pt.wikipedia.org/wiki/#{@ingredient.name}\" target=\"_blank\">wiki</a>"
+        #@txt= "<a href=\"http://pt.wikipedia.org/wiki/#{@ingredient.name}\" target=\"_blank\">wiki</a>"
     end
 
     respond_to do |format|

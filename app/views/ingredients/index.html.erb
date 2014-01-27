@@ -5,7 +5,11 @@
 <div class="">
 	<ul class="nav nav-tabs">
 	<% ('A'..'Z').each do |l| %>
-		<li><%= link_to l, ingredients_path(initial: l)%></li>
+		<%if params[:initial]==l%>
+			<li class="active"><%= link_to l, ingredients_path(initial: l)%></li>
+		<%else%>
+			<li><%= link_to l, ingredients_path(initial: l)%></li>
+		<%end%>
 	<%end%>
 	</ul>
 </div>
