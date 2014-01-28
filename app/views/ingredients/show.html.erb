@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 
 <%= image_tag(@link, :size => "320x320", class: "thumbnail") if@link.length>0 %>
-<small>imagem fornecida por <%=image_tag('https://www.google.com/uds/css/small-logo.png')%></small>
+<%= render 'shared/sponsor' %>
 
 <h3>
 	<%= @ingredient.name.capitalize %>

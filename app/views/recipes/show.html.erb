@@ -4,13 +4,13 @@
       	<div class="row">
       		<div class="pull-left">
           		<%= image_tag(@link, alt: @recipe.name, :size => "320x320", class: "thumbnail") if@link.length>0 %>
-          		<small>imagem fornecida por <%=image_tag('https://www.google.com/uds/css/small-logo.png')%></small>
+          		<%= render 'shared/sponsor' %>
           	</div>
           	<div class="center pull-right">
             	<small><%= @recipe.pax if @recipe.pax %></small><br/>
             	<i class="icon-bell"></i>
             	<h3><%= @recipe.prep_time if @recipe.prep_time %></h3>
-            	<%= "<small>DIFICULDADE:<br/> #{@recipe.difficult_level}</small>".html_safe if @recipe.difficult_level %>
+            	<%= "<small>#{t(:difficulty).upcase}:<br/> #{@recipe.difficult_level}</small>".html_safe if @recipe.difficult_level %>
           	</div>
         </div>
         <%end%>
@@ -19,8 +19,8 @@
 			<h3 class="pull-left"><%= @recipe.name %></h3>
         	<% if signed_in? %>
         		<div class="pull-right">
-          			<a href="#" id="fav" class="btn" data-toggle="tooltip" title="Marcar como favorita"><i class="icon-star"></i></a>
-          			<a href="#" id="car" class="btn" data-toggle="tooltip" title="Enviar para Lista de Compras"><i class="icon-shopping-cart"></i></a>
+          			<a href="#" id="fav" class="btn" ><i class="icon-star"></i></a>
+          			<a href="#" id="car" class="btn" ><i class="icon-shopping-cart"></i></a>
           		</div>
        		<% end %>
 		</div>

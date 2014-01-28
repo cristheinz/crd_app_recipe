@@ -1,4 +1,63 @@
 <% provide(:title, t(:about)) %>
-<h1>About Bimbyfy</h1>
-<p>
-</p>
+<div class="row offset1">
+	<h3 class="" style="text-align:left;">Bimby what!?</h3>
+	<blockquote class="">
+		<em>Bimbyfy stands for Bimby found you.</em>
+		<small>Chris, Bimbyfy founder</small>
+	</blockquote>
+</div>
+
+<div class="row offset1">
+	<h2 class="pull-left" style="text-align:left;"><em>Discover a world of recipes you can cook.</em></h2>
+</div>
+	
+<div class="row span10 offset1">
+	<p>
+		Bimbyfy is a tool for intelligent search recipes, initially thought to Thermomix recipes, however, open to receive any recipe through registration.
+		The main functionality is to search for recipes by ingredients, but you can also search recipes by name, category, book or magazine.
+		The website adapts to any screen, allowing a simple and enjoyable navigation. It can be used on a tablet or smartphone as an application.
+		In order to ensure copyright, The preparation mode is not published and all the images are provided by Google searches. Registered users can check for recipe in the book or magazine it was published with the page information.
+	</p>
+	<p>
+		Bimbyfy aims to be the largest catalog of recipes on the Internet, indexing the best recipes from specialized cooking magazines and providing innovative features based on a robust search engine.
+	</p>
+</div>
+
+<div class="row offset1">
+	<% if signed_in?%>
+		<h2 class="pull-left"><em>Exclusive features</em></h2>
+	<%else%>
+		<h2 class="pull-left"><em>Make your registration now.</em></h2>
+	
+	<%end%>
+</div>
+<div class="span10 offset1">
+	<p>
+		Registered users have access to the following features:
+	</p>
+	<ul>
+		<li>Select books and magazines to apply filters;</li>
+		<li>Mark recipes as favorites;</li>
+		<li>Insert recipe preparation mode;</li>
+		<li>Send ingredients from recipes to market list;</li>
+		<li>Manage market list;</li>
+		<li>Create their own recipes.</li>
+	</ul>
+	
+	<% unless signed_in?%>
+	<p>
+		Click <%= link_to "here", signup_path %> to signup for free.
+		
+	</p>
+	<%end%>
+</div>
+
+<div class="row offset1">
+	<h2 class="pull-left"><em>Liked! Can I help?</em></h2>
+</div>
+<div class="span10 offset1">
+	<p>Yes! You can donate to contribute for the website maintenance.</p>
+	<p>Thanks.</p>
+	<%= render 'layouts/donate2' %>
+	
+</div>
