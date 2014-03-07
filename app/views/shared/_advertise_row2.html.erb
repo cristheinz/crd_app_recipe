@@ -1,0 +1,27 @@
+<div class="hidden-phone ">
+	<center>
+		<div id="myAdCarousel" class="carousel slide carousel-fade">
+			<div class="carousel-inner">
+				<div class="item active">
+					<%if Rails.env.production?%>
+						<%= render 'layouts/ads1'  %>
+					<%else%>
+						<div style="background-color: gray; width:728px; height:90px;"><h2>Adsense</h2></div>
+					<%end%>
+				</div>
+				<div class="item">
+					<%if Rails.env.production?%>
+						<%= render 'layouts/zanox_grouponPT'%>
+					<%else%>
+						<div style="background-color: gray; width:728px; height:90px;"><h2>Afiliados</h2></div>
+					<%end%>
+				</div>
+			</div>
+		</div>
+	</center>
+</div>
+<script>
+$('#myAdCarousel').carousel({
+	interval: 4000
+})
+</script>

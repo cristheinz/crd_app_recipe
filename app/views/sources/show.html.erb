@@ -1,4 +1,6 @@
 <% provide(:title, @source.public? ? @source.name : t(:my_cookbook)) %>
+  <%= render 'shared/advertise_row2' unless current_user?(@source.user)%>
+
   <% if @source.public? %>
   <div class="row-fluid">
   	<div class="span3">
@@ -21,8 +23,6 @@
     <%end%>
   <% end %>
   
-  <%= render 'shared/advertise_row' unless current_user?(@source.user)%>
-
   <% if @recipes.size>0 %>
   <h5><%= t :categories %>:</h5>
   <div class="accordion" id="accordion2">

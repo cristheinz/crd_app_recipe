@@ -2,15 +2,45 @@
 
       	<% if @recipe.source.public? %>
       	<div class="row">
-      		<div class="pull-left">
+          	<div class="span6">
           		<%= image_tag(@link, alt: @recipe.name, :size => "320x320", class: "thumbnail") if@link.length>0 %>
           		<%= render 'shared/sponsor' %>
           	</div>
-          	<div class="center pull-right">
-            	<small><%= @recipe.pax if @recipe.pax %></small><br/>
-            	<i class="icon-bell"></i>
-            	<h3><%= @recipe.prep_time if @recipe.prep_time %></h3>
-            	<%= "<small>#{t(:difficulty).upcase}:<br/> #{@recipe.difficult_level}</small>".html_safe if @recipe.difficult_level %>
+          	<div class="center span6 hidden-phone">
+          		<table class="table">
+          			<tr>
+          				<th><i class="icon-th"></i><br><%=t(:produce)%></th>
+          				<th><i class="icon-time"></i><br><%=t(:preparation)%></th>
+          				<th><i class="icon-wrench"></i><br><%=t(:difficulty)%></th>
+          				<th><i class="icon-fire"></i><br><%=t(:calories)%></th>
+          			</tr>
+          			<tr>
+          				<td><%= @recipe.pax ? @recipe.pax : "n.d." %></small></td>
+          				<td><%= @recipe.prep_time ? @recipe.prep_time : "n.d."  %></td>
+          				<td><%= @recipe.difficult_level ? @recipe.difficult_level : "n.d." %></td>
+          				<td><%= @recipe.calories > 0 ? "#{@recipe.calories} Kcal" : "n.d." %></td>
+          			</tr>
+          		</table>
+          	</div>
+          	<div class="center span6 visible-phone">
+          		<table class="table">
+          			<tr>
+          				<th><i class="icon-th"></i><br><%=t(:produce)%></th>
+          				<td><%= @recipe.pax ? @recipe.pax : "n.d." %></small></td>
+          			</tr>
+          			<tr>
+          				<th><i class="icon-time"></i><br><%=t(:preparation)%></th>
+          				<td><%= @recipe.prep_time ? @recipe.prep_time : "n.d."  %></td>
+          			</tr>
+          			<tr>
+          				<th><i class="icon-wrench"></i><br><%=t(:difficulty)%></th>
+          				<td><%= @recipe.difficult_level ? @recipe.difficult_level : "n.d." %></td>
+          			</tr>
+          			<tr>
+          				<th><i class="icon-fire"></i><br><%=t(:calories)%></th>
+          				<td><%= @recipe.calories > 0 ? "#{@recipe.calories} Kcal" : "n.d." %></td>
+          			</tr>
+          		</table>
           	</div>
         </div>
         <%end%>

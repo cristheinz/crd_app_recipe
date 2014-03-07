@@ -1,10 +1,11 @@
 <% provide(:title, params[:search] ? "#{t(:search)} #{t(:recipes)}" : t(:recipes)) %>
+  <%= render 'shared/advertise_row2' %>
+
   <div class="center">
     <h1><%= t(:recipes) %></h1>
     <!--<p><%= "#{@recipes.size} #{t(:recipes)}" if @recipes %></p>-->
   </div>
   
-  <%= render 'shared/advertise_row' %>
 
   <% if @recipes.size==0 %>
   	<span>Nenhuma receita encontrada. <%= link_to "Voltar", root_path %></span>
@@ -16,6 +17,5 @@
       <%= will_paginate @recipes %>
     </div>
   <% end %>
-
 
 <%= render 'usersmarks/form' if signed_in? %>

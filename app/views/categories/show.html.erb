@@ -1,10 +1,11 @@
 <% provide(:title, @category.name) %>
+    <%= render 'shared/advertise_row2' %>
+
 	<div class="center">
       <h1><%= @category.name %></h1>
       <p><%= "#{@num_recipes} #{t(:recipes)}" if @num_recipes.to_i>0 %></p>
     </div>
     
-    <%= render 'shared/advertise_row' %>
     
 
     <div class="tabbable">
@@ -48,5 +49,5 @@
     
       </div>
     </div>
-
+    
 <%= render 'usersmarks/form' if signed_in? %>
