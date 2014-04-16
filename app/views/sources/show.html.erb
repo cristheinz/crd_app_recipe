@@ -1,4 +1,4 @@
-<% provide(:title, @source.public? ? @source.name : t(:my_cookbook)) %>
+<% provide(:title, @source.public? ? @source.name.include?('Momento') ? "#{t(:magazine)} #{l @source.publish_date, format: "%B %Y"}".html_safe : "#{t(:book)} - #{@source.name}" : t(:my_cookbook)) %>
   <%= render 'shared/advertise_row2' unless current_user?(@source.user)%>
 
   <% if @source.public? %>

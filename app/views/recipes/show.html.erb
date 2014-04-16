@@ -1,4 +1,4 @@
-<% provide(:title, @recipe.name) %>
+<% provide(:title, @recipe.source.public? ? "#{t(:recipe_title)} - #{@recipe.name}" : "#{t(:my_cookbook)} - #{@recipe.name}") %>
 
       	<% if @recipe.source.public? %>
       	<div class="row">
