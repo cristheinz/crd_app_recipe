@@ -9,6 +9,23 @@ module ApplicationHelper
       page_title
     end
   end
+  
+  def full_description(page_description)
+    base_description = "Permite descobrir facilmente quais receitas podera fazer com os ingredientes da sua despensa e muito mais.."
+    if page_description.empty?
+      base_description
+    else
+      page_description
+    end
+  end
+  
+  def source_type(source_name)
+    if source_name.include?("Momento")
+      "Revista Bimby #{source_name}"
+    else
+      "Livro Bimby - #{source_name}"
+    end
+  end
 
   def get_badge(ratio)
   	str=case ratio.to_i

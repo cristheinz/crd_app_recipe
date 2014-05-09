@@ -1,4 +1,6 @@
 <% provide(:title, @ingredient.name.capitalize) %>
+<% provide(:description, "#{@ingredient.name.capitalize}? Saiba mais sobre este ingrediente...") %>
+
 <p id="notice"><%= notice %></p>
 
 <%= image_tag(@link, :size => "320x320", class: "thumbnail") if@link.length>0 %>

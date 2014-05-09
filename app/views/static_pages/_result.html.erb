@@ -12,7 +12,8 @@
           <%= link_to image_tag(r[:recipe].source.image.to_s, "data-src"=> "holder.js/150x100", size: "150x100 ", alt: r[:recipe].source.name, class: "hidden-phone"), r[:recipe].source if r[:recipe].source.public? %>
         </td>
         <td colspan="2" class="span7">
-          <%= link_to "<h5>#{r[:recipe].name}</h5>".html_safe, r[:recipe], class: "" %>
+          <!--<%= link_to "<h5>#{r[:recipe].name}</h5>".html_safe, r[:recipe], class: "" %>-->
+          <%= link_to "<h5>#{r[:recipe].name}</h5>".html_safe, recipe_url("#{r[:recipe].id}-#{r[:recipe].name.downcase.gsub(' ', '-')}"), class: "" %>
         </td>
         <td class="span3">
           <div class="pull-right">

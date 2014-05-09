@@ -1,4 +1,5 @@
-<% provide(:title, params[:search] ? "#{t(:search)} #{t(:recipes)}" : t(:recipe_title)) %>
+<% provide(:title, params[:search] ? "#{t(:search)} #{t(:recipes)} de #{params[:search]}" : t(:recipe_title)) %>
+<% provide(:description, params[:search] ? "O Bimbyfy ajuda a encontrar a receita que procura!" : "Pode marcar suas receitas favoritas e adicionar seus ingredientes para a sua lista de compras.") %>
   <%= render 'shared/advertise_row2' %>
 
   <div class="center">

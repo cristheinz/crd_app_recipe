@@ -12,6 +12,7 @@ CrdAppRecipe::Application.routes.draw do
   resources :ingredients
 
   resources :recipes, only: [:index, :show, :new, :edit, :create, :update, :destroy]
+  #match 'recipes/:name' => 'recipes#show'
 
   resources :users
   resources :password_resets

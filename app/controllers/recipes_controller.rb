@@ -47,6 +47,8 @@ class RecipesController < ApplicationController
   # GET /recipes/1
   # GET /recipes/1.json
   def show
+    params[:id]=params[:id].split('-')[0] if params[:id]    
+    
     @recipe = Recipe.find(params[:id])
     @desc=@recipe.description.gsub(/\n/, '<br/>')
     @desc= ActionController::Base.helpers.sanitize(@desc, tags: %w(b br))
@@ -155,6 +157,8 @@ class RecipesController < ApplicationController
 
   private
     def exist
+      #puts params[:id].split('-')[0] if params[:id]
+      params[:id]=params[:id].split('-')[0] if params[:id]
       unless Recipe.where("id = ?",params[:id]).first
         redirect_to root_path
       end

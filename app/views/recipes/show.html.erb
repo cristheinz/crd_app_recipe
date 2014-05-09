@@ -1,9 +1,10 @@
 <% provide(:title, @recipe.source.public? ? "#{t(:recipe_title)} - #{@recipe.name}" : "#{t(:my_cookbook)} - #{@recipe.name}") %>
-
+<% provide(:description, @recipe.source.public? ? "Receita de #{@recipe.name}, #{source_type(@recipe.source.name)}, pag. #{@recipe.page}" : "Receita de #{@recipe.name}, carregada pelo utilizador do Bimbyfy") %>
+<div vocab="http://schema.org/" typeof="Recipe">
       	<% if @recipe.source.public? %>
       	<div class="row">
           	<div class="span6">
-          		<%= image_tag(@link, alt: @recipe.name, :size => "320x320", class: "thumbnail") if@link.length>0 %>
+          		<%= image_tag(@link, alt: @recipe.name, :size => "320x320", class: "thumbnail", property: "image") if@link.length>0 %>
           		<%= render 'shared/sponsor' %>
           	</div>
           	<div class="center span6 hidden-phone">
@@ -15,10 +16,13 @@
           				<th><i class="icon-fire"></i><br><%=t(:calories)%></th>
           			</tr>
           			<tr>
-          				<td><%= @recipe.pax ? @recipe.pax : "n.d." %></small></td>
+          				<td property="recipeYield"><%= @recipe.pax ? @recipe.pax : "n.d." %></small></td>
           				<td><%= @recipe.prep_time ? @recipe.prep_time : "n.d."  %></td>
+          				<!--<td><%= @recipe.prep_time ? "<span property='preptime'>P#{@recipe.prep_time.gsub(' Min', 'M').gsub(' Seg', 'S')}</span>".html_safe : "n.d."  %></td>-->
           				<td><%= @recipe.difficult_level ? @recipe.difficult_level : "n.d." %></td>
-          				<td><%= @recipe.calories > 0 ? "#{@recipe.calories} Kcal" : "n.d." %></td>
+          				<td>
+          					<%= @recipe.calories > 0 ? "<div property='nutrition' typeof'NutritionInformation'><span property='calories'>#{@recipe.calories}</span></div>".html_safe : "n.d." %>
+          				</td>
           			</tr>
           		</table>
           	</div>
@@ -26,7 +30,7 @@
           		<table class="table">
           			<tr>
           				<th><i class="icon-th"></i><br><%=t(:produce)%></th>
-          				<td><%= @recipe.pax ? @recipe.pax : "n.d." %></small></td>
+          				<td property="recipeYield"><%= @recipe.pax ? @recipe.pax : "n.d." %></small></td>
           			</tr>
           			<tr>
           				<th><i class="icon-time"></i><br><%=t(:preparation)%></th>
@@ -38,7 +42,9 @@
           			</tr>
           			<tr>
           				<th><i class="icon-fire"></i><br><%=t(:calories)%></th>
-          				<td><%= @recipe.calories > 0 ? "#{@recipe.calories} Kcal" : "n.d." %></td>
+          				<td>
+          					<%= @recipe.calories > 0 ? "<div property='nutrition' typeof='NutritionInformation'><span property='calories'>#{@recipe.calories}</span></div>".html_safe : "n.d." %>
+          				</td>
           			</tr>
           		</table>
           	</div>
@@ -46,7 +52,7 @@
         <%end%>
 
        	<div class="row">
-			<h3 class="pull-left"><%= @recipe.name %></h3>
+			<h3 class="pull-left" property="name"><%= @recipe.name %></h3>
         	<% if signed_in? %>
         		<div class="pull-right">
           			<a href="#" id="fav" class="btn" ><i class="icon-star"></i></a>
@@ -58,7 +64,7 @@
 		<div class="row">
 				<%if @recipe.source.public?  %>
 	        		<p><i><%= link_to @recipe.source.name, @recipe.source %></i>&nbsp;|&nbsp;
-       		  		<i><%= link_to @recipe.category.name, @recipe.category %></i>&nbsp;|&nbsp;
+       		  		<i><%= link_to @recipe.category.name, @recipe.category, property: "recipeCategory" %></i>&nbsp;|&nbsp;
        				<i><%= "#{t(:page)} #{@recipe.page}" %></i></p>
        			<%else%>
     				<%= link_to t(:my_cookbook) , @recipe.source %></i>&nbsp;|&nbsp;
@@ -85,7 +91,7 @@
         <% @recipe.list.each do |key,value| %>
           <p><b><%= if (key.nil? || key.empty?) then t(:ingredients) else key end %>:</b>
           <% value.each do |v| %>
-            <li><%= v %></li>
+            <li property="ingredients"><%= v %></li>
           <% end %>
           </p>
         <% end %>
@@ -119,7 +125,7 @@
         
         </div>
         </div>
-
+</div>
 <script>
   jQuery(function($){
     $("input[type=submit]").hide();
