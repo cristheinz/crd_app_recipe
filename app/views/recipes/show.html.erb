@@ -98,7 +98,11 @@
 
         <p><b><%= t(:preparation) %>:</b></p>
         <% if !signed_in? %>
-        	<div class="alert warning"><%= "#{t(:copyright_lock)} #{link_to t(:sign_in), signin_path}".html_safe %></div>
+        	<div class="alert warning">
+        		<!--<%= "<strong>#{t(:copyright_lock)}</strong>".html_safe %>-->
+        		<%= render 'shared/regmsg' %>
+        		
+        	</div>
         <%else%>
         	<%= form_for(current_user.usersmarks.build(recipe_id: @recipe.id), remote: true, :html => { :id => "flags" }) do |f| %>
               <%= f.hidden_field :recipe_id %>

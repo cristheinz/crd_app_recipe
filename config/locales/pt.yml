@@ -96,7 +96,7 @@ pt:
   update_password: "Actualizar password"
   update_your_profile: "Actualizar os dados da conta"
   usernote: "Consulte seu livro e guarde aqui o modo de preparação desta receita"
-  welcome_notice: "Bem-Vindo ao Bimbyfy!"
+  welcome_notice: "Bem-Vindo ao Bimbyfy! Seleccione os livros e revistas que possui.."
   welcome_subject: "Bem-Vindo ao Bimbyfy!"
 
 #will_paginate

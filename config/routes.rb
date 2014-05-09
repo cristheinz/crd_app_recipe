@@ -28,6 +28,7 @@ CrdAppRecipe::Application.routes.draw do
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
+  match '/welcome',  to: 'sources#index'
 
   resources :assignments, only: [:new, :create, :destroy]
   match '/assignout', to: 'assignments#destroy', via: :delete

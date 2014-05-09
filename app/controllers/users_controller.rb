@@ -24,7 +24,8 @@ class UsersController < ApplicationController
         UserMailer.welcome_email(@user).deliver
         sign_in @user
         flash[:success] = t(:welcome_notice)
-        redirect_to root_path# if @user.admin?
+        #redirect_to root_path# if @user.admin?
+        redirect_to welcome_path
       else
         render 'new'
       end  
