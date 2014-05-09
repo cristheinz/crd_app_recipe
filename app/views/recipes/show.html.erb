@@ -3,11 +3,10 @@
 <div vocab="http://schema.org/" typeof="Recipe">
       	<% if @recipe.source.public? %>
       	<div class="row">
-          	<div class="span6">
+          	<!--<div class="span3"></div>-->
+          	<div class="center span6 hidden-phone">
           		<%= image_tag(@link, alt: @recipe.name, :size => "320x320", class: "thumbnail", property: "image") if@link.length>0 %>
           		<%= render 'shared/sponsor' %>
-          	</div>
-          	<div class="center span6 hidden-phone">
           		<table class="table">
           			<tr>
           				<th><i class="icon-th"></i><br><%=t(:produce)%></th>
@@ -25,6 +24,9 @@
           				</td>
           			</tr>
           		</table>
+          	</div>
+          	<div class="offset1 span5 hidden-phone">
+          		<%= render 'shared/advertise_column'  %>
           	</div>
           	<div class="center span6 visible-phone">
           		<table class="table">
@@ -60,6 +62,7 @@
           		</div>
        		<% end %>
 		</div>
+		
 		
 		<div class="row">
 				<%if @recipe.source.public?  %>
