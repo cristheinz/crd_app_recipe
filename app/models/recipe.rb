@@ -47,5 +47,12 @@ class Recipe < ActiveRecord::Base
   def user
     source.user
   end
+  
+  def link
+    #s=self.name.chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').downcase.to_s
+    s=I18n.transliterate(self.name.downcase).gsub(/[^0-9a-z ]/i, ' ')
+    "#{self.id}-#{s.gsub(/\s+/, "-")}"
+  
+  end
 
 end

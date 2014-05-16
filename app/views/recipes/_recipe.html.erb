@@ -7,8 +7,9 @@
             </td>
             <td colspan="2" class="span7">
             	<!--<%= link_to "<h5>#{recipe.name}</h5>".html_safe, recipe, class: "" %>-->
-                <!--<%= link_to "<h5>#{recipe.name}</h5>".html_safe, "../receitas/#{recipe.id}", class: "" %>-->
-                <%= link_to "<h5>#{recipe.name}</h5>".html_safe, recipe_url("#{recipe.id}-#{recipe.name.downcase.gsub(' ', '-')}"), class: "" %>
+                <!--<%= link_to "<h5>#{recipe.name}</h5>".html_safe, "../receitas/#{recipe.id}", class: "" %>
+                <%= link_to "<h5>#{recipe.name}</h5>".html_safe, recipe_url("#{recipe.id}-#{recipe.name.downcase.gsub(' ', '-')}"), class: "" %>-->
+                <%= link_to "<h5>#{recipe.name}</h5>".html_safe, recipe_url(recipe.link), class: "" %>
             </td>
             <td class="span3">
                 <div class="pull-right">

@@ -20,7 +20,7 @@
           				<!--<td><%= @recipe.prep_time ? "<span property='preptime'>P#{@recipe.prep_time.gsub(' Min', 'M').gsub(' Seg', 'S')}</span>".html_safe : "n.d."  %></td>-->
           				<td><%= @recipe.difficult_level ? @recipe.difficult_level : "n.d." %></td>
           				<td>
-          					<%= @recipe.calories > 0 ? "<div property='nutrition' typeof'NutritionInformation'><span property='calories'>#{@recipe.calories}</span></div>".html_safe : "n.d." %>
+          					<%= @recipe.calories > 0 ? "<div property='nutrition' typeof='NutritionInformation'><span property='calories'>#{@recipe.calories}</span></div>".html_safe : "n.d." if @recipe.calories %>
           				</td>
           			</tr>
           		</table>
@@ -45,7 +45,7 @@
           			<tr>
           				<th><i class="icon-fire"></i><br><%=t(:calories)%></th>
           				<td>
-          					<%= @recipe.calories > 0 ? "<div property='nutrition' typeof='NutritionInformation'><span property='calories'>#{@recipe.calories}</span></div>".html_safe : "n.d." %>
+          					<%= @recipe.calories > 0 ? "<div property='nutrition' typeof='NutritionInformation'><span property='calories'>#{@recipe.calories}</span></div>".html_safe : "n.d." if @recipe.calories %>
           				</td>
           			</tr>
           		</table>

@@ -37,12 +37,14 @@
           <ul class="nav nav-tabs nav-stacked">
           <% @source.recipes.where("category_id = ?",c.id).order("name").each do |r| %>
             <li>
-              <%= link_to "<strong class='span10'>#{r.name}</strong><small class=''> #{t(:page)} #{r.page}</small>".html_safe, recipe_url("#{r.id}-#{r.name.downcase.gsub(' ', '-')}") if @source.public? %>
-              <%= link_to "<strong>#{r.name}</strong>".html_safe, recipe_url("#{r.id}-#{r.name.downcase.gsub(' ', '-')}") unless @source.public? %>
               <!--
               <%= link_to "<strong class='span10'>#{r.name}</strong><small class=''> #{t(:page)} #{r.page}</small>".html_safe, r if @source.public? %>
               <%= link_to "<strong>#{r.name}</strong>".html_safe, r unless @source.public? %>
+              <%= link_to "<strong class='span10'>#{r.name}</strong><small class=''> #{t(:page)} #{r.page}</small>".html_safe, recipe_url("#{r.id}-#{r.name.downcase.gsub(' ', '-')}") if @source.public? %>
+			  <%= link_to "<strong>#{r.name}</strong>".html_safe, recipe_url("#{r.id}-#{r.name.downcase.gsub(' ', '-')}") unless @source.public? %>
               -->
+              <%= link_to "<strong class='span10'>#{r.name}</strong><small class=''> #{t(:page)} #{r.page}</small>".html_safe, recipe_url(r.link) if @source.public? %>
+              <%= link_to "<strong>#{r.name}</strong>".html_safe, recipe_url(r.link) unless @source.public? %>
             </li>  
           <% end %>
           </ul>
