@@ -37,7 +37,7 @@ namespace :xml do
   desc "Resume XML data" 
   task :resume do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = doc.css("ingredient").map {|node| node.inner_text }
     r_array = doc.css("recipe").map {|node| node['name'] }
@@ -54,7 +54,7 @@ namespace :xml do
     #args.with_defaults(element: "source")
     args.with_defaults(element: "ingredient")
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("#{args[:element]}").each do |node|
@@ -70,7 +70,7 @@ namespace :xml do
   desc "List XML data" 
   task :newingredients => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("ingredient").each do |node|
@@ -85,7 +85,7 @@ namespace :xml do
   desc "List XML data" 
   task :newcategories => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("category").each do |node|
@@ -100,7 +100,7 @@ namespace :xml do
   desc "List XML data" 
   task :newrecipes => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("recipe").each do |node|
@@ -114,7 +114,7 @@ namespace :xml do
   desc "List XML data" 
   task :checkportions => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("ingredient").each do |node|
@@ -128,7 +128,7 @@ namespace :xml do
   desc "List XML data" 
   task :checknotes => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("ingredient").each do |node|
@@ -142,7 +142,7 @@ namespace :xml do
   desc "List XML data" 
   task :checkparts => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("ingredient").each do |node|
@@ -156,7 +156,7 @@ namespace :xml do
   desc "List XML data" 
   task :timecheck => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("recipe").each do |node|
@@ -170,7 +170,7 @@ namespace :xml do
   desc "List XML data" 
   task :lvlcheck => :environment do
     require 'nokogiri'
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     doc = Nokogiri::XML(f)
     i_array = []
     doc.css("recipe").each do |node|
@@ -225,7 +225,9 @@ namespace :xml do
     #f = File.open("#{Rails.root}/lib/tasks/201312_revista_37.xml")
     #f = File.open("#{Rails.root}/lib/tasks/201401_revista_38.xml")
     #f = File.open("#{Rails.root}/lib/tasks/201402_revista_39.xml")
-    f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    #f = File.open("#{Rails.root}/lib/tasks/201403_revista_40.xml")
+    f = File.open("#{Rails.root}/lib/tasks/201404_revista_41.xml")
+    #f = File.open("#{Rails.root}/lib/tasks/201405_revista_42.xml")
     #f = File.open("#{Rails.root}/lib/tasks/paosaloio.xml")
     #f = File.open("#{Rails.root}/lib/tasks/receitas_utf8.xml")
     doc = Nokogiri::XML(f)

@@ -1,6 +1,14 @@
 class StaticPagesController < ApplicationController
   
   def home
+    @since="1 year"
+    case 
+    when (Date.new(Time.now.year,Time.now.month,1) - Date.new(2013,8,1)).to_i/365 > 1
+      @since="#{(Date.new(Time.now.year,Time.now.month,1) - Date.new(2013,8,1)).to_i/365} years"
+    when (Date.new(Time.now.year,Time.now.month,1) - Date.new(2013,8,1)).to_i/365 == 0
+      @since="#{(Time.now.year * 12 + Time.now.month) - (2013 * 12 + 8)} months"
+    end
+    
     tips=["Para pesquisar qualquer tipo de queijo basta adicionar <u>queijo%</u>",
       "Se quer encontrar receitas que levam frango ou peito de frango, adicione <u>%frango</u>.",
       "Aceite as nossas sugestoes de ingredientes enquanto digita.",
@@ -41,7 +49,7 @@ class StaticPagesController < ApplicationController
       #end
     else
       @ingredients = Ingredient.find(:all,:select=>'name').map(&:name)
-      @sources=Source.public_sources.limit(10)
+      @sources=Source.public_sources.limit(3)
       #@sources2=Source.where("public != ?",true).order("publish_date DESC").paginate(page: params[:page], per_page: 3)
   	end
 

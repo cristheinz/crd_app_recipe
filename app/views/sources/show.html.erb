@@ -1,6 +1,6 @@
 <% provide(:title, @source.public? ? @source.name.include?('Momento') ? "#{t(:magazine)} #{l @source.publish_date, format: "%B %Y"}".html_safe : "#{t(:book)} - #{@source.name}" : "#{t(:my_cookbook)}") %>
 <% provide(:description, @source.public? ? "#{source_type(@source.name)}, confira todas as receitas aqui.": "Crie o seu livro de receitas originais no Bimbyfy.") %>
-  <%= render 'shared/advertise_row2' unless current_user?(@source.user)%>
+  <%= render 'shared/advertise_row' unless current_user?(@source.user)%>
 
   <% if @source.public? %>
   <div class="row-fluid">
@@ -54,3 +54,5 @@
     <% end %>
   </div>
   <% end %>
+  
+<%= render 'shared/affiliate_row' unless current_user?(@source.user)%>

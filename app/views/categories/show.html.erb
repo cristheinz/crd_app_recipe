@@ -1,6 +1,6 @@
 <% provide(:title, @category.name) %>
 <% provide(:description, "Temos #{@num_recipes} receitas de #{@category.name} para fazer na sua Bimby.") %>
-    <%= render 'shared/advertise_row2' %>
+    <%= render 'shared/advertise_row' %>
 
 	<div class="center">
       <h1><%= @category.name %></h1>
@@ -50,5 +50,7 @@
     
       </div>
     </div>
+    
+    <%= render 'shared/affiliate_row' %>
     
 <%= render 'usersmarks/form' if signed_in? %>

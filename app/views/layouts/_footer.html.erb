@@ -1,16 +1,19 @@
 <footer class="row-fluid">
+	<div class="span4">developed by <b><a href="http://cristheinz.info" target="_blank">cristheinz</a></b></div>
+
     <ul class="nav nav-pills pull-right">
     	<li><%= link_to t(:ingredients), ingredients_path unless URI(request.url).path.to_s.include?("ingredient") %></li>
       	<li><%= link_to t(:about), about_path unless URI(request.url).path.to_s.include?("about") %></li>
       	<!--<li><%= link_to t(:partnership), partnership_path unless URI(request.url).path.to_s.include?("partnership") %></li>-->
       	<li><%= link_to t(:home), assignout_path, method: "delete" if !home_page? %></li>
     </ul>
-    
-
-	<div class="span4">developed by <b><a href="http://cristheinz.info" target="_blank">cristheinz</a></b></div>
- 	
+	
+	<div class="row offset5 span5">
+		<small>since <%=@since%> ago</small>
+	</div> 	
 
 </footer>
+
 <!--<div id="fim">Deus seja louvado</div>
 <div class="crd-footer hidden-desktop row-fluid">
     <ul class="nav nav-pills pull-right">

@@ -16,4 +16,4 @@
 <%= "#{link_to t(:edit), edit_ingredient_path(@ingredient)} |".html_safe if signed_in? && current_user.admin? %> 
 <%= link_to "&#8592; #{t(:ingredients)}".html_safe, ingredients_path(initial: @ingredient.name[0].upcase) %>
 
-
+<%= render 'shared/advertise_row2' %>

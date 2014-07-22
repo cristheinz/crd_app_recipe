@@ -1,7 +1,7 @@
 <% provide(:title, t(:slogan_title)) %>
 
 <% if !assigned_in? %>
-	<%= render 'layouts/news' if 1==2%>
+	<%= render 'layouts/news' if Time.now.year == 2014 && Time.now.month == 8 %>
 	
 	<div class="hero-unit center span8 offset1">
     	<h1>Bimby<span class="crd-fy">fy</span></h1>
@@ -26,14 +26,16 @@
 
         			<div id="myCarousel" class="carousel slide">
           				<div class="carousel-inner">
+          					<% first=true%>
           					<% @sources.each do |s| %>
-            					<div class="item <%= "active" if s.id<2 %>">
+            					<div class="item <%= "active" if first %>">
               						<!--<%= link_to image_tag(s.image.to_s, "data-src"=> "holder.js/300x200", size: "300x200", alt: "#{s.name}"), sources_path, class: "thumbnail" %>-->
               						<%= link_to image_tag(s.image.to_s, size: "198x240"), sources_path, class: "thumbnail" %>
               						<div class="carousel-caption">
                 						<p><%= link_to s.name, s %></p>
               						</div>
             					</div>
+            					<% first=false if first%>
           					<% end %>
           				</div>
           				<!-- Carousel nav-->
@@ -55,11 +57,14 @@
   	</div>
 
   	<div class="span12">
-  		<%= render 'shared/advertise_row2' %>
+  		<%= render 'shared/advertise_row' %>
   	</div>
 
 <% else %>
-	<div>
+	<div class="span12">
+		<%= render 'shared/advertise_row' %>
+	</div>
+	<div class="row-fluid">
     	<%= render 'shared/assignment_form' %>
   	</div>
   
@@ -75,12 +80,15 @@
   	</div>
 
   	<% if @result.size>0 %>
-  		<%= render 'shared/advertise_row2' %>
 		<ul class="thumbnails">
     		<%= render 'rank' %>
   		</ul>
 	<% else %>
     	<span>Nenhuma receita encontrada. <%= link_to "Voltar", root_path %></span>
   	<% end %>
+  	
+  	<div class="span12">
+  		<%= render 'shared/affiliate_row' %>
+  	</div>
 
 <% end %>
