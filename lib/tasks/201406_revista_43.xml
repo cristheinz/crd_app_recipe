@@ -202,7 +202,7 @@
 	  <ingredient portion="100 g" note="mais q.b. p/ untar">azeite</ingredient>
 	  <ingredient portion="700 g" note="tipo 65">farinha</ingredient>
 	  <ingredient portion="1 c. chá">sal</ingredient>
-	  <ingredient portion="2 c. chá">orégão</ingredient>
+	  <ingredient portion="2 c. chá">orégãos</ingredient>
 	  <ingredient portion="120 g" note="s/ caroços">azeitonas pretas</ingredient>
 	  <ingredient portion="2 latas">sardinhas em tomate</ingredient>
 	  <ingredient portion="2 c. chá">flor de sal</ingredient>
@@ -237,7 +237,7 @@
 	  <ingredient portion="1 c. chá" note="mais q.b. p/ polvilhar">tomilho limão</ingredient>
 	  <ingredient portion="150 g">cebola</ingredient>
 	  <ingredient portion="50 g">vinho branco</ingredient>
-	  <ingredient portion="1 cubo" note="ou 1c. chá de caldo de peixe caseiro">caldo de peixe</ingredient>
+	  <ingredient portion="1 cubo" note="ou 1 c. chá de caldo de peixe caseiro">caldo de peixe</ingredient>
 	  <ingredient portion="850 g">água</ingredient>
 	  <ingredient portion="1 c. chá">sal</ingredient>
 	  <ingredient portion="300 g">arroz p/ risoto</ingredient>
@@ -590,7 +590,7 @@
 	  <ingredient part="Ingredientes p/ cheesecake" portion="370 g">leite condensado</ingredient>
 	  <ingredient part="Ingredientes p/ cobertura" portion="150 g" note="mais q.b. p/ decorar">frutos silvestres</ingredient>
 	  <ingredient part="Ingredientes p/ cobertura" portion="200 g">açúcar</ingredient>
-	  <ingredient part="Ingredientes p/ cobertura" portion="q.b. p/ polvilhar">açúcar em pó</ingredient>
+	  <ingredient part="Ingredientes p/ cobertura" note="q.b. p/ polvilhar">açúcar em pó</ingredient>
      </ingredients>
      <description>.</description>
     </recipe>
